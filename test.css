@@ -1,6 +1,9 @@
 *{font-family: 'Roboto'}
 a{text-decoration: none;  color: #222222;}
-.menu1{}
+.menu1{width: 100%; margin: auto;}
+.menu1 ul{display: flex;}
+.menu1 ul li{list-style: none;}
+
 .content{
     width: 900px; margin: auto;
     display: flex;
