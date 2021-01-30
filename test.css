@@ -1,0 +1,34 @@
+*{font-family: 'Roboto'}
+a{text-decoration: none;  color: #222222;}
+.menu1{}
+.content{
+    width: 900px; margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.content .left{width: 70%;}
+.content .right{width: 25%;}
+.menu2 ul{
+    width: 100%;
+    display: flex;
+    margin: 0; padding: 0;
+}
+.menu2 ul li{
+    list-style: none;
+    display: block;
+    margin: 5px 15px 0px 0px;
+    padding-bottom: 15px;
+    border-bottom: 4px solid #ffffff; 
+    transition: 0.2s;
+}
+.menu2 ul li:hover{border-bottom: 4px solid #fb6c27;}
+hr{margin: 0; padding: 0; height: 0px; width: 830px; color: #777777;}
+
+.more{font-size: 13px;}
+.more .name{color: #fb6c27;}
+.more .followed{color: #777777;}
+.more .office a{color: #41455e;}
+.more .icon{color: #777777; margin: 0px 0px 0px 10px;}
+.more .time{color: #686565;}
+
+.content p{font-size: 17px; color: #383737;}
