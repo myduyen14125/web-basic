@@ -1,37 +1,54 @@
-*{font-family: 'Roboto'}
-a{text-decoration: none;  color: #222222;}
-.menu1{width: 100%; margin: auto;}
-.menu1 ul{display: flex;}
-.menu1 ul li{list-style: none;}
-
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: auto;
+    box-sizing: border-box;
+    color: #00ff00;
+}
+body{
+    background: linear-gradient(45deg, #00ff73, #5acaff);
+    height: 100vh;
+}
+.center{
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
 .content{
-    width: 900px; margin: auto;
-    display: flex;
-    justify-content: space-around;
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 10%; bottom: 10%;
+    left: 10%; right: 10%;
+    border-radius: 10px;
+    background:url(404.png) #151729;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.575);
+    
 }
-.content .left{width: 70%;}
-.content .right{width: 25%;}
-.menu2 ul{
-    width: 100%;
-    display: flex;
-    margin: 0; padding: 0;
+.content h1{
+    font-size: 18vw;
+    line-height: 1em;
 }
-.menu2 ul li{
-    list-style: none;
-    display: block;
-    margin: 5px 15px 0px 0px;
-    padding-bottom: 15px;
-    border-bottom: 4px solid #ffffff; 
-    transition: 0.2s;
+.content h4{
+    position: relative;
+    font-size: 1.5em;
+    margin: 25px;
+    padding: 10px 20px;
+    color: #151729;
+    background-color: #00ff00;
+    display: inline-block;
 }
-.menu2 ul li:hover{border-bottom: 4px solid #fb6c27;}
-hr{margin: 0; padding: 0; height: 0px; width: 830px; color: #777777;}
-
-.more{font-size: 13px;}
-.more .name{color: #fb6c27;}
-.more .followed{color: #777777;}
-.more .office a{color: #41455e;}
-.more .icon{color: #777777; margin: 0px 0px 0px 10px;}
-.more .time{color: #686565;}
-
-.content p{font-size: 17px; color: #383737;}
+.content p{font-size: 1.2em;}
+.content a{
+    font-size: 1.5em;
+    margin: 20px;
+    padding: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: #2ee6ec;
+    color: #151729;
+    text-decoration: none;
+    transition: 0.4s;
+}
+.content a:hover{
+    background-color: #e44e52;
+}
