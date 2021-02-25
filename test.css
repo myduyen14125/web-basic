@@ -4,6 +4,7 @@ body{
     color: #F48847;
     font-size: 18.5px;
     border: 0; margin: 0; padding: 0;
+    font-family: 'Shippori Mincho B1', serif;
 }
 a{text-decoration: none; color: #F48847;}
 /*Header*/
@@ -65,12 +66,14 @@ a{text-decoration: none; color: #F48847;}
 .photo2 .bloom a{
     font-size: 33.5px; text-align: center; width: 85%;
     text-decoration: underline;
+    text-underline-position: under;
 }
 /*Layers*/
+.layer_block{width: 100%; height: 122vh}
 .layer{
     position: relative;
     background: #e9ceb0; margin-top: 250px;
-    width: 100%; height: 115vh;
+    width: 100%; height: 122vh;
 }
 .layer .layer1 img{
     position: absolute;
@@ -83,13 +86,55 @@ a{text-decoration: none; color: #F48847;}
     width: 46%; height: 76vh;
     background: white;
     display: flex; align-items: center;
+    transition: 0.5s;
+    transform: translateX(20px);
 }
 .layer .layer2 .content{width: 77%; margin: auto;}
 .layer .layer2 .content h2{
     display: block; margin: 35px 0; 
     width: 100%; font-size: 45px;
 }
-.layer .layer2 .content p, .layer2 button{
-    line-height: 1.8em; 
+.layer .layer2 .content p{
+    line-height: 1.8em; font-size: 18px;
     display: block; margin: 30px 0;
+}
+.layer2 button{
+    width: 167px; height: 76px; 
+    background: #F48847;
+    border: 0; font-size: 18px;
+    font-family: 'Shippori Mincho B1', serif;
+}
+.layer2 button a{color: white;}
+.layer:hover .layer1, .layer:hover .layer2{
+    visibility: visible;
+    transform: translateX(0);
+}
+/*Footer here!!! End now*/
+.footer{
+    position: relative; background: #282d30;
+    width: 100%; height: 58vh; color:white; font-size: 18px;
+}
+.footer .icons{
+    display: flex; justify-content: center; align-items: center;
+    height: 30%; font-size: 24px;
+}
+.footer .icons a{display: inline-block; margin: 0 13px; color: white;}
+.footer p{display: block; text-align: center;}
+.footer .form{
+    width: 100%; height: 30%;
+    display: flex; align-items: center; justify-content: center;
+}
+.footer form input{
+    display: inline-block; margin: auto;
+    font-size: 18px; height: 61px; border: 0; margin: 5px;
+}
+input[type="text"]{width: 266.6px; padding: 0 25px;}
+input[type="submit"]{
+    width: 113.317px;
+    background: #F48847; color: white;
+}
+.footer .author{width: 100%; text-align: center; font-size: 15px;}
+.footer .author a{
+    border-bottom: 1px solid #f48847; 
+    padding: 2px;
 }
