@@ -1,0 +1,216 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+/*Headers here!*/
+.header {
+  width: 100%;
+  height: 7vh;
+  border: 1px solid #cbcbcb;
+}
+.header .menu {
+  width: 1140px;
+  margin: auto;
+  height: 100%;
+  display: flex;
+  padding: 0;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+.header .menu .menu-left {
+  width: 50%;
+  padding: 0;
+}
+.header .menu .menu-right {
+  width: 50%;
+  padding: 0;
+}
+.header .menu .menu-left ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-inline-start: 0px;
+  margin: 15px 0;
+}
+.header .menu .menu-right ul {
+  display: flex;
+  justify-content: flex-end;
+  padding-inline-start: 0px;
+  align-items: center;
+}
+.header .menu ul a li {
+  list-style: none;
+  display: inline-block;
+  margin: 2px 8px;
+  transition: 0.2s;
+}
+.header .menu ul a li:hover {
+  color: #cbcbcb;
+}
+.header .bars {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+/*Now, let's move to content of beauty*/
+.content {
+  width: 1140px;
+  margin: auto;
+  padding: 0;
+}
+.logo {
+  width: 100%;
+  height: 34vh;
+  border-bottom: 1px solid #bbbbbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo img {
+  width: 400px;
+  height: 118px;
+  object-fit: cover;
+}
+.logo p {
+  text-align: center;
+  margin: 10px;
+  font-size: 13px;
+  letter-spacing: 1.2px;
+}
+.search-bar {
+  width: 100%;
+  height: 10vh;
+  padding: 0;
+  border-bottom: 1.2px solid #5e5e5e;
+  font-size: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-bar div {
+  margin: 0 15px;
+}
+.search-bar ul {
+  display: flex;
+}
+.search-bar ul li {
+  height: 100%;
+  display: inline-block;
+  margin: 0 13px;
+  transition: 0.3s;
+}
+.search-bar ul li:hover {
+  color: #bbbbbb;
+}
+.title {
+  width: 100%;
+  height: 23vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title span {
+  color: #bbbbbb;
+  font-size: 18px;
+}
+.title h1 {
+  font-size: 68px;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 1px solid #d8d6d6;
+  border-bottom: 1px solid #d8d6d6;
+}
+.block {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.box {
+  width: 555px;
+  height: 120vh;
+  text-align: center;
+}
+.box img {
+  width: 555px;
+  height: 367.88px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+.box div {
+  margin: 15px;
+}
+.box .in {
+  font-size: 13.6px;
+  transition: 0.2ms;
+}
+.box .in a:hover {
+  color: #bbbbbb;
+}
+.box .name {
+  font-size: 35px;
+  transition: 0.4s;
+}
+.box .name:hover {
+  color: #bbbbbb;
+}
+.box .time {
+  color: #cbcbcb;
+  font-size: 17px;
+}
+.box p {
+  font-size: 21px;
+  width: 80%;
+  margin: auto;
+}
+.box .layer {
+  position: relative;
+  margin: auto;
+  font-size: 18px;
+  width: 100px;
+}
+.box.layer1 {
+}
+.box .layer2 {
+  position: absolute;
+  top: -9px;
+  left: 0;
+  box-sizing: border-box;
+  border-top: 1px solid black;
+  width: 100px;
+  height: 45.6px;
+  background: white;
+  margin: auto;
+  opacity: 1;
+  transform: translateY(45.7px);
+  transition: 0.5s;
+}
+.box .layer:hover .layer2 {
+  transform: translateY(0);
+  opacity: 1;
+  border: 1.5px solid black;
+}
+.box .layer3 {
+  position: absolute; top: 59px; left: 25px;
+  background: white;
+  margin: 0; opacity: 0;
+  transition-delay: 0.8s; transition: 0.8s;
+}
+.box .layer:hover .layer3{
+  transform: translateY(-60px); opacity: 1;
+}
+.box .more{margin: 58px 0;}
+.box .more div:hover{color: #bbbbbb;}
