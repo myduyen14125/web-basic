@@ -1,0 +1,11 @@
+
+form{
+    width: 300px; height: auto;
+    background-color: pink;
+    margin: auto;
+    box-sizing: border-box;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+}
