@@ -70,8 +70,7 @@ a{text-decoration: none; color: white;}
 
 #box-model{
     position: absolute;
-    top: 30%;left: 50%;
-    margin-left: 150px;
+    top: 30%;left: 45%;
     width: 300px;
     margin: auto;
     border: 1px solid rgb(0, 0, 0);
