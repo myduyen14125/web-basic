@@ -1,0 +1,80 @@
+body{
+    background: linear-gradient(45deg ,rgb(47, 117, 117), black);
+    font-family: 'Montserrat', sans-serif;
+}
+a{text-decoration: none; color: white;}
+.content{
+    color: white;
+    width: 450px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+.content h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid grey;
+}
+.content form{
+    box-sizing: border-box;
+    padding: 10px 35px;
+}
+.content form input{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    outline: none;
+    border: rgb(33, 216, 216) 2px solid;
+    border-radius: 5px;
+}
+.content form label{font-size: 16px; padding: 5px; display: block;}
+.content form input[type=submit]{
+    color: white; font-size: 24px;
+    padding: 10px;
+    background: #1a1a1a;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 40%;
+    margin: auto;
+    display: block;
+    border: greenyellow 2px solid;
+    cursor: pointer;
+}
+
+
+.user-list{
+    position: absolute;
+    top: 78vh; left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.user-list h1{
+    font-size: 3.5vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-shadow: 0.2vw 0.2vw red;
+    margin-bottom: 0;
+}
+.user-list .fa{font-size: 3.5vw;}
+.user-list ul{
+    width: 20%; margin: auto;
+    text-align: left;
+}
+
+#box-model{
+    position: absolute;
+    top: 30%;left: 30%;
+    width: 300px;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+}

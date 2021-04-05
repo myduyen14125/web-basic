@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="content">
+        <h1>New Members</h1>
+        <form onsubmit="myFunction(event)">
+            <label>Full name</label>
+            <input type="text" id="fullname" placeholder="Enter your fullname"><br><br>
+            <label>Age</label>
+            <input type="number" id="age" placeholder="Enter your age"><br><br>
+            <input type="submit" value="Submit" onclick="check()">
+        </form>
+    </div>
+    <div class="user-list">
+        <h1>List of Users</h1>
+        <div class="fa fa-caret-down"></div>
+        <ul id="list">   
+        </ul>
+    </div>
+    
+    <div id="box-model">
+        <div class="modal-header">
+            <h2>Unvalidate data</h2>
+        </div>
+        <div class="modal-body">
+            <p>Ew, try again!</p>
+        </div>
+        <div class="modal-footer">
+            <button onclick="close()">Close</button>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
