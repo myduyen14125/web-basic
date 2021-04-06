@@ -4,6 +4,7 @@ let i;
 let elAge = document.getElementById('age').value;
 let model = document.getElementById("box-model");
 let btn = document.getElementById("btn");
+let dem = 0;
 
 model.style.display = "none";
 
@@ -12,11 +13,12 @@ function myFunction(e) {
     let elName = document.getElementById('fullname').value;
     let elAge = document.getElementById('age').value;
     for (i = 0; i < elName.length; i++){
-        if (elName[i] >= 0 && elName[i] <= 9) 
+        if (elName[i] >= '0' && elName[i] <= '9') 
+            dem=1;
             model.style.display = "block";
-        else 
-            list.innerHTML += '<li">' + '<pre>' +  "Name: " + elName + "    Age: " + elAge + '</pre>'+ '</li>';
+            break;
     }
+    if(dem=0)(list.innerHTML += '<li">' + '<pre>' +  "Name: " + elName + "    Age: " + elAge + '</pre>'+ '</li>');
 }
 
 

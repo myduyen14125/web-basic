@@ -28,9 +28,11 @@ a{text-decoration: none; color: white;}
     padding: 10px;
     background: none;
     outline: none;
-    border: rgb(33, 216, 216) 2px solid;
+    border: rgb(99, 173, 173) 2px solid;
     border-radius: 5px;
+    box-sizing: border-box;
 }
+.content form input:hover{border: rgb(33, 216, 216) 2px solid}
 .content form label{font-size: 16px; padding: 5px; display: block;}
 .content form input[type=submit]{
     color: white; font-size: 24px;
@@ -43,6 +45,11 @@ a{text-decoration: none; color: white;}
     display: block;
     border: greenyellow 2px solid;
     cursor: pointer;
+    transition: 0.2s;
+}
+.content form input[type=submit]:hover{
+    transform: scale(1.07);
+    color: pink;
 }
 
 
