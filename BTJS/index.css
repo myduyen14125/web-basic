@@ -68,6 +68,9 @@ a{text-decoration: none; color: white;}
     width: 20%; margin: auto;
     text-align: left;
 }
+.user-list ul li{
+    white-space:pre";
+}
 
 #box-model{
     position: absolute;
