@@ -80,7 +80,7 @@ a{text-decoration: none; color: white;}
 }
 
 #box-model{
-    position: absolute;
+    position: fixed;
     top: 7%;left: 39.5%;
     width: 300px;
     margin: auto;
