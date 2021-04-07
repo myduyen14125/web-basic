@@ -1,0 +1,91 @@
+body{
+    background: linear-gradient(45deg ,rgb(47, 117, 117), black);
+    font-family: 'Montserrat', sans-serif;
+}
+a{text-decoration: none; color: white;}
+
+.content{
+    color: white;
+    width: 450px;
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #1a1a1a;
+    border-radius: 10px;
+}
+.content h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid grey;
+}
+.content form{
+    box-sizing: border-box;
+    padding: 10px 35px;
+}
+.content form input{
+    color: white;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    outline: none;
+    border: rgb(99, 173, 173) 2px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.content form input:hover{border: rgb(33, 216, 216) 2px solid}
+.content form label{font-size: 16px; padding: 5px; display: block;}
+.content form input[type=submit]{
+    color: white; font-size: 24px;
+    padding: 10px;
+    background: #1a1a1a;
+    border-radius: 15px;
+    font-size: 16px;
+    width: 40%;
+    margin: auto;
+    display: block;
+    border: greenyellow 2px solid;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.content form input[type=submit]:hover{
+    transform: scale(1.07);
+    color: pink;
+}
+
+
+.user-list{
+    position: absolute;
+    top: 78vh; left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.user-list h1{
+    font-size: 3.5vw;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    text-shadow: 0.2vw 0.2vw red;
+    margin-bottom: 0;
+}
+.user-list .fa{font-size: 3.5vw;}
+.user-list ul{
+    width: 20%; margin: auto;
+    text-align: left;
+}
+.user-list ul li{
+    white-space:pre";
+}
+
+#box-model{
+    position: fixed;
+    top: 7%;left: 39.5%;
+    width: 300px;
+    margin: auto;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    padding: 15px;
+    background-color: white;
+}

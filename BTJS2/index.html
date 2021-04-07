@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <div class="content">
+        <h1>New Members</h1>
+        <form onsubmit="myFunction(event)">
+            <label>Full name</label>
+            <input type="text" id="fullname" placeholder="Enter your fullname"><br><br>
+            <input type="submit" value="Submit" id="sub">
+        </form>
+    </div>
+    <div class="user-list">
+        <h1>List of Users</h1>
+        <div class="fa fa-caret-down"></div>
+        <ul id="list">   
+        </ul>
+    </div>
+    
+    <div id="box-model">
+        <div class="modal-header">
+            <h2>Unvalidate data</h2>
+        </div>
+        <div class="modal-body">
+            <p>Ew, only accept names as alphabetic characters! <br><br>Try again. </p>
+        </div>
+        <div class="modal-footer">
+            <button id="btn">Close</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
