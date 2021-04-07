@@ -66,9 +66,12 @@ a{text-decoration: none; color: white;}
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    width: 100%;
+    width: 50%; margin: auto;
     text-shadow: 0.2vw 0.2vw red;
     margin-bottom: 0;
+    background-color: #1a1a1a;
+    color: white;
+    border-radius: 10px;
 }
 .user-list .fa{font-size: 3.5vw;}
 .user-list ul{
