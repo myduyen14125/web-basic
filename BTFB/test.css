@@ -1,0 +1,310 @@
+body{ 
+    margin: 0; padding: 0; 
+    font-family: Helvetica, sans-serif;
+    background-color: #f0f2f5;
+    font-size: 15px;
+}
+a{text-decoration: none;  color: black;}
+li{list-style: none;}
+.navbar{
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0.2vh 0.1vh #c2c2c2;
+    box-sizing: border-box;
+    padding: 0;
+    background-color: white;
+}
+.navbar .right{
+    width: 30%;
+}
+.navbar .center{
+    width: 40%;
+}
+.navbar .left{
+    width: 30%;
+}
+.navbar ul{
+    height: 8vh; 
+    padding: 2.5px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+}
+.right ul{justify-content: flex-start;}
+.center ul{justify-content: center;}
+.left ul{justify-content: flex-end;}
+
+.navbar ul li{
+    display: inline-block;
+    font-size: 25px;
+    text-align: center;
+    transition: 0.3s;
+}
+.right ul .search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15px;
+    background-color: #f0eaea;
+    border-radius: 20px;
+    padding: 8px;
+}
+.right ul li input{
+    border: 0; 
+    margin: 0 5px; 
+    font-size: 1vw;
+    background-color: #f0eaea;
+}
+input:focus{outline: none;}
+
+.right ul li.symbol{
+    width: 40px; height: 40px; 
+    border-radius: 50%;
+    background: linear-gradient(45deg, #1874e7, #47a7fc);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.right ul li.symbol a{color: white; font-size: 30px;}
+
+.right ul li.arrow{
+    width: 40px; height: 40px; 
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#606266;
+    transition: 0.3s;
+    margin: 0;
+}
+.right ul li.arrow:hover{background-color: #dadada;}
+
+.right ul li.search a, .center ul li a{color: #65676b;}
+.center ul li{
+    width: 8vw; height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.left ul li{
+    width: 40px; height: 40px; 
+    border-radius: 50%;
+    background-color: #dadada;
+    margin: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.navbar .center ul li:hover{
+    border-radius: 10px;
+    background-color: #dadada;
+}
+.navbar .right ul li.symbol:hover, .left ul li:hover{
+    border-radius: 50%;
+    background-color: #c2c2c2;
+}
+
+.icon{
+    position: relative;
+}
+.icon .notification{
+    width: fit-content;
+    border-radius: 8.5px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    left: 52%;
+    color: white;
+    font-size: 11px;
+    padding: 2px 4px;
+}
+.name{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+    width: 5vw; height: 40px;
+    font-weight: bold;
+    background-color: #dadada;
+    margin: 0 0.2vw;
+    padding: 0 10px;
+    font-size: 1vw;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.name img{
+    width: 28px; height: 28px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.name span{
+    display: inline-block;
+    margin: 0 5px;
+}
+.name:hover{background-color: #c2c2c2;}
+
+.cover{
+    background: linear-gradient(180deg, #dbc2b8,white);
+    height: 72vh;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex; justify-content: center;
+    align-items: stretch;
+    flex-direction: column;
+    box-sizing: border-box;
+    box-shadow: 0.2vh 0.15vh #c2c2c2;
+}
+.cover img.cover_photo{
+    width: 62.1%;
+    margin: auto;
+    margin-top: 0;
+    height: 49vh;
+    object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.cover img.avt_photo{
+    width: 168px; height: 168px;
+    border-radius: 50%;
+    border: 5px solid white;
+    position: absolute;
+    z-index: 2;
+    top: 47.5%; margin-top: -84px;
+    left: 50%; margin-left: -84px;
+}
+.cover .edit_cover{
+    width: 11vw;
+    height: 5vh;
+    background-color: #dadada;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 52%;
+    left: 68%;
+    font-size: 1vw;
+    cursor: pointer;
+}
+.cover .edit_cover div{margin-left: 0.5vw;}
+.cover .edit_avt{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    padding: 8px;
+    background: #dadada;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 2;
+    top: 56%;
+    margin-top: -10px;
+    left: 54.5%;
+    margin-left: -10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.cover h1{
+    margin-top: 1.2vw; width: 100%;
+    height: 4%;
+    text-align: center;
+    font-size: 32px;
+}
+.cover .more{
+    color: rgb(34, 95, 165);
+    text-align: center;
+    width: 100%;
+    display: block;
+    margin-bottom: 15px;
+    height: 0%;
+}
+.cover .menu{
+    width: 60vw;
+    height: 8vh;
+    margin: auto;
+    padding: 0; 
+    box-sizing: border-box;
+    border-top: 1px solid #dadada;
+    font-weight: bold;
+    color: #606266;
+}
+.cover .menu a{color: #606266;}
+.cover .menu ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 7px;
+    text-align: center;
+    height: 100%;
+}
+.cover .menu pre{font-family: Helvatica, sans-serif;}
+.menu ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0 10px;
+    transition: 0.3s;
+}
+.menu ul li:hover{
+    background-color: #eeeeee;
+}
+.add-story{
+    background-color: #1874e7;
+}
+
+
+.mess-list{
+    position: fixed;
+    bottom: 5%; right: 3%;
+}
+.mess-list ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+}
+.mess-list ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+.bubble{
+    width: 55px; height: 55px;
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 2px  #c2c2c2;
+    text-align: center;
+    position: relative;
+}
+.bubble img{
+    width: fit-content;
+    object-fit: contain;
+    border-radius: 50%;
+    width: 55px; height: 55px;
+}
+.bubble .fa{font-size: 25px; margin-top: 19px;}
+.bubble .small-bubble{
+    width: 15px; height: 15px;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow: 1px 2px  #c2c2c2;
+    position: absolute;
+    top: 0; right: 0;
+    font-size: 13px;
+    display: none;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.bubble:hover .small-bubble{
+    display: block;
+}
