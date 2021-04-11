@@ -43,7 +43,7 @@ function currentDate(){
     let date = today.getFullYear()+"/"+(today.getMonth()+1)+"/"+today.getDate();
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let dateTime = date + ' - ' + time;
-    output.innerHTML += "1. Date and Time: "+ (dateTime) + '<br>';
+    output.innerHTML += "1. Date and Time: "+ (dateTime) + '<br>' + '<br>';
 }
 
 
@@ -59,7 +59,7 @@ function fullDate(){
     let full2 = month+"/"+date+"/"+year +"  ";
     let full3 = date+"-"+month+"-"+year +"  ";
     let full4 = date+"/"+month+"/"+year +"  ";
-    output.innerHTML += "2. Full Date: "+ full1 + full2 + full3 + full4 + '<br>';
+    output.innerHTML += "2. Full Date: "+ full1 + full2 + full3 + full4 + '<br>' + '<br>';
 }
 
 
@@ -70,7 +70,7 @@ function checkIncreasedDigits(){
     let temp = input[0];
     while(i < input.length){
         if(temp >= input[i]){
-            output.innerHTML += "3. Increased Digits: Wrong!" + '<br>'
+            output.innerHTML += "3. Increased Digits: Wrong!" + '<br>' + '<br>';
             break;
         }
         else{
@@ -79,7 +79,7 @@ function checkIncreasedDigits(){
             count++;
         }
     }
-    if(count == input.length -1) output.innerHTML += "3. Increased Digits: Yub!" + '<br>';
+    if(count == input.length -1) output.innerHTML += "3. Increased Digits: Yub!" + '<br>' + '<br>';
 }
 
 //Bài 4 : Viết một chương trình JavaScript để thay thế mọi ký tự trong một chuỗi đã
@@ -98,7 +98,7 @@ function changeString() {
     for(let i = 0; i < b.length; i++){
         output.innerHTML += b[i];
     }
-    output.innerHTML += '<br>';  
+    output.innerHTML += '<br>' + '<br>';  
 }
 
 
@@ -107,8 +107,8 @@ function createString(){
     let input = document.getElementById("input5").value;
     let output = document.getElementById("output");
     if(input.length >= 3 && input.length % 2 != 0)
-        output.innerHTML += "5. Center substring: " + (input.substring( ((input.length-1)/2)-1, (input.length+3)/2)) + '<br>';
-    else output.innerHTML += "5. String needs odd characters!" + '<br>';
+        output.innerHTML += "5. Center substring: " + (input.substring( ((input.length-1)/2)-1, (input.length+3)/2)) + '<br>'+ '<br>';
+    else output.innerHTML += "5. String needs odd characters!" + '<br>'+ '<br>';
 }
 
 
@@ -127,8 +127,8 @@ function findInString(){
         }
         letter = input[i];
     }
-    if(max == 1) output.innerHTML += "6. String has equal number of each character" + '<br>';
-    else output.innerHTML += "6. Find letters have most in string: "+ letter +". Times: "+ max + '<br>';
+    if(max == 1) output.innerHTML += "6. String has equal number of each character" + '<br>'+ '<br>';
+    else output.innerHTML += "6. Find letters have most in string: "+ letter +". Times: "+ max + '<br>'+ '<br>';
     //console.log(letter);
 }
 
@@ -139,12 +139,12 @@ function checkString(){
     let count = 0;
     for (let i = 0; i < input.length; i++){
         if (input.substring(i, i + 4) == "java"){
-            output.innerHTML += "7. String has 'java'" + '<br>';
+            output.innerHTML += "7. String has 'java'" + '<br>'+ '<br>';
             count = 1; 
         }
     }
     if (count == 0) {
-        output.innerHTML += "7. String doesn't have 'java'." + '<br>';
+        output.innerHTML += "7. String doesn't have 'java'." + '<br>'+ '<br>';
     }
 }
 
@@ -158,18 +158,18 @@ function nameOfMonth(){
     let input = document.getElementById("input8").value;
     let output = document.getElementById("output");
     switch(input){
-        case '1': output.innerHTML += "8. January" + '</br>'; break;
-        case '2': output.innerHTML += "8. February" + '</br>'; break;
-        case '3': output.innerHTML += "8. March" + '</br>'; break;
-        case '4': output.innerHTML += "8. April" + '</br>'; break;
-        case '5': output.innerHTML += "8. May" + '</br>'; break;
-        case '6':output.innerHTML += "8. June" + '</br>'; break;
-        case '7':output.innerHTML += "8. July" + '</br>'; break;
-        case '8':output.innerHTML += "8. August" + '</br>'; break;
-        case '9': output.innerHTML += "8. September" + '</br>'; break;
-        case '10':output.innerHTML += "8. October" + '</br>'; break;
-        case '11': output.innerHTML += "8. November" + '</br>'; break;
-        case '12':output.innerHTML += "8. December" + '</br>'; break;
+        case '1': output.innerHTML += "8. January" + '</br>'+ '<br>'; break;
+        case '2': output.innerHTML += "8. February" + '</br>'+ '<br>'; break;
+        case '3': output.innerHTML += "8. March" + '</br>'+ '<br>'; break;
+        case '4': output.innerHTML += "8. April" + '</br>'+ '<br>'; break;
+        case '5': output.innerHTML += "8. May" + '</br>'+ '<br>'; break;
+        case '6':output.innerHTML += "8. June" + '</br>'+ '<br>'; break;
+        case '7':output.innerHTML += "8. July" + '</br>'+ '<br>'; break;
+        case '8':output.innerHTML += "8. August" + '</br>'+ '<br>'; break;
+        case '9': output.innerHTML += "8. September" + '</br>'+ '<br>'; break;
+        case '10':output.innerHTML += "8. October" + '</br>'+ '<br>'; break;
+        case '11': output.innerHTML += "8. November" + '</br>'+ '<br>'; break;
+        case '12':output.innerHTML += "8. December" + '</br>'+ '<br>'; break;
     }
 }
 //Bài 9: Viết một hàm JavaScript nhập một chuỗi và tìm từ dài nhất trong chuỗi
@@ -189,21 +189,21 @@ function longestWordOfString(){
         if (words[i].length == maxLength) 
         output.innerHTML += words[i] + " ";
     }
-    output.innerHTML += '<br>';
+    output.innerHTML += '<br>'+ '<br>';
 }
 //Bài 10 : Viết chương trình tạo form HTML nhập 2 số và in ra giá trị là số nguyên tố giữa 2 số đó
 function primeNumber(){
-    let a = document.getElementById("inputA").value;
-    let b = document.getElementById("inputB").value;
+    let a = +document.getElementById("inputA").value;
+    let b = +document.getElementById("inputB").value;
     let output = document.getElementById("output");
-    let count = 0, i, j;
+    let count = 0;
     output.innerHTML += "10. Prime number: ";
-    for (i = a; i <= b; i++){
-        for(j = 2; j <= Math.sqrt(i); j++ ){
+    for (let i = a; i <= b; i++){
+        for(let j = 2; j <= Math.sqrt(i); j++ ){
             if(i % j == 0) {count ++;}
         }
         if(count == 0) output.innerHTML += i + " ";
         count = 0;
     }
-    output.innerHTML += '<br>'
+    output.innerHTML += '<br>'+ '<br>';
 }
