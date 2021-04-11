@@ -64,7 +64,7 @@ function fullDate(){
 
 
 function checkIncreasedDigits(){
-    let input = document.getElementById("inputNumber").value;
+    let input = document.getElementById("input3").value;
     let output = document.getElementById("output");
     let i = 1, count = 0;
     let temp = input[0];
@@ -85,7 +85,7 @@ function checkIncreasedDigits(){
 //Bài 4 : Viết một chương trình JavaScript để thay thế mọi ký tự trong một chuỗi đã
 
 function changeString() {
-    let input = document.getElementById("input").value;
+    let input = document.getElementById("input4").value;
     let output = document.getElementById("output");
     let b = [];
     let temp;
@@ -104,7 +104,7 @@ function changeString() {
 
 //Bài 5 : Viết chương trình JavaScript để tạo chuỗi bằng cách sử dụng ba ký tự ởgiữa của một chuỗi có độ dài lẻ. Độ dài chuỗi phải lớn hơn hoặc bằng ba.
 function createString(){
-    let input = document.getElementById("input").value;
+    let input = document.getElementById("input5").value;
     let output = document.getElementById("output");
     if(input.length >= 3 && input.length % 2 != 0)
         output.innerHTML += "5. Center substring: " + (input.substring( ((input.length-1)/2)-1, (input.length+3)/2)) + '<br>';
@@ -114,7 +114,7 @@ function createString(){
 
 //Bài 6 : Viết chương trình hiển thị số xuất hiện nhiều lần nhất trong mảng
 function findInString(){
-    let input = document.getElementById("input").value;
+    let input = document.getElementById("input6").value;
     let save = input ;
     let max = 0, letter;
     for (let i = 0; i < input.length; i++){
@@ -134,7 +134,7 @@ function findInString(){
 
 //Bài 7 : Viết chương trình để kiểm tra xem chuỗi chứa &#39;java&#39; hay không
 function checkString(){
-    let input = document.getElementById("input").value;
+    let input = document.getElementById("input7").value;
     let output = document.getElementById("output");
     let count = 0;
     for (let i = 0; i < input.length; i++){
@@ -155,7 +155,7 @@ function isIncludeJava(str) {
 }
 //Bài 8 : Viết một hàm để lấy tên tháng từ một số cụ thể ( ví dụ : 1 – Tháng một )
 function nameOfMonth(){
-    let input = document.getElementById("inputMonth").value;
+    let input = document.getElementById("input8").value;
     let output = document.getElementById("output");
     switch(input){
         case '1': output.innerHTML += "8. January" + '</br>'; break;
@@ -174,7 +174,7 @@ function nameOfMonth(){
 }
 //Bài 9: Viết một hàm JavaScript nhập một chuỗi và tìm từ dài nhất trong chuỗi
 function longestWordOfString(){
-    let input = document.getElementById("input").value;
+    let input = document.getElementById("input9").value;
     let output = document.getElementById("output");
     let words = input.split(' ');//hàm slit(' ') cắt chuỗi thành một mảng các kí tự
     let maxLength = 0, longestWord;
