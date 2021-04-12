@@ -40,7 +40,7 @@ clear.addEventListener("click", function(e){
 function currentDate(){
     let output = document.getElementById("output");
     let today = new Date();
-    let date = today.getFullYear()+"/"+(today.getMonth()+1)+"/"+today.getDate();
+    let date = today.getDate()+"/"+(today.getMonth()+1)+"/"+today.getFullYear();
     let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
     let dateTime = date + ' - ' + time;
     output.innerHTML += "1. Date and Time: "+ (dateTime) + '<br>' + '<br>';
