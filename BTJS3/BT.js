@@ -202,6 +202,7 @@ function primeNumber(){
         for(let j = 2; j <= Math.sqrt(i); j++ ){
             if(i % j == 0) {count ++;}
         }
+        if(i == 1) count++;
         if(count == 0) output.innerHTML += i + " ";
         count = 0;
     }
