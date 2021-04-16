@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Add members</h1>
+    <form action="" id="form">
+
+      <div class="input-box">
+        <div class="name-in in">
+          <label>Members name</label><br /><br />
+          <input type="text" id="name" maxlength="10" placeholder="Last name" required/>
+          <span class="tooltiptext" id="tooltip">Only accept names as alphabetic characters!</span>
+        </div>
+        <div class="faculty-in in">
+          <label>Field</label><br /><br />
+          <select name="category" id="choose" required>disabled selected value
+            <option disabled selected value>No selected</option>
+            <!--<option value="No selected">No selected</option>-->
+            <option value="Programing">Programing</option>
+            <option value="Design">Design</option>
+            <option value="Marketing Online">Marketing Online</option>
+          </select>
+        </div>
+        <div class="file-in in">
+          <label>Choose an avatar</label><br /><br />
+          <input type="file" id="avt" name="avt" accept="image/png, image/jpeg" required />
+          <img id="preview-img" src="">
+        </div>
+        <input id="sub" type="submit" value="Submit" />
+      </div>
+      
+    </form>
+    
+
+    <div class="output-box">
+      <table id="table" border="1">
+        <thead>
+          <tr>
+            <td>#</td>
+            <td>Members name</td>
+            <td>Field</td>
+            <td>Imagine</td>
+            <td>Action</td>
+
+          </tr>
+        </thead>
+        
+        <tbody>
+          <tr id="cell">        
+
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

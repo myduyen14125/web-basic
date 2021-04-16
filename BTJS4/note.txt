@@ -1,0 +1,45 @@
+
+/* Preview - img cách 1 
+function preview_img(event){
+    console.log(event)
+    let files = event.target.files;
+    let blob = URL.createObjectURL(files[0]);
+    document.querySelector("#preview-img").src = blob; 
+}
+
+
+document.querySelector("#avt").onchange = preview_img;
+*/
+//sub.addEventListener("click", function (event) {
+//  addRow(event);
+//});
+
+/*
+let i = 0; 
+function getData(event){
+    event.preventDefault();
+    let x = document.getElementById("choose").selectedIndex;
+
+    let id = ++i;
+    let name = document.getElementById("name").value;
+    let field = document.getElementsByTagName("option")[x].value;
+    let img = document.getElementById("preview-img");
+        img.src = URL.createObjectURL(hehe.target.files[0]);
+    }
+    let new_row = 
+    `<tr>
+        <td>${id}</td>
+        <td><input type = "text" id="input" readonly value = "${name}"></td>
+        <td>${field}</td>
+        <td>${}</td>
+        <td><button class="btnEdit" onlick="editRow()">Edit</button> </td>
+    </tr>`
+
+    document.querySelector("tbody").innerHTML += new_row;
+}
+
+function editRow(event){
+    event.target.parentNode.parentNode.querySelector("input").readOnly = false;
+}
+document.querySelector("#form").onsubmit = getData;
+*/

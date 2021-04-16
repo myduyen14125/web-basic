@@ -1,0 +1,111 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(45deg, #00ff73, #5acaff);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+h1{
+    text-align: center;
+    text-shadow: 1px 4px rgba(224, 224, 224, 0.4);
+    color: #151729;
+}
+.input-box{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #cdcdcd;
+    padding: 30px;
+    margin-bottom: 50px;
+    background: #151729;
+    color: white;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.575);
+    border-radius: 10px;
+}
+.input-box .in{
+    width: 25%; 
+}
+input, select, option{
+    color: white;
+    padding: 8px;
+    background: #151729;
+    outline: none;
+    border: rgb(99, 173, 173) 2px solid;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+input:hover, select:hover{border: rgb(33, 216, 216) 2px solid}
+input[type=submit]{
+    padding: 10px;
+    border: greenyellow 2px solid;
+    cursor: pointer;
+    transition: 0.2s;
+}
+input[type=submit]:hover{
+    transform: scale(1.15);
+    color: rgb(233, 71, 71);
+    background-color: white;
+    border: red 2px solid;
+}
+
+.output-box{
+    background: #151729;
+    color: white;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.575);
+    border-radius: 5px;
+    width: 94%;
+    margin: auto;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #cdcdcd;
+    margin: auto;
+    border-radius: 10px;
+}
+  
+th, td {
+    text-align: left;
+    padding: 16px;
+}
+  
+tr:nth-child(even) {
+    background-color: #7c7a7a;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    display: none;
+}
+button{
+    margin: 10px;
+    padding: 8px;
+    color: red;
+    outline: none;
+    border: grey 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#tooltip{
+    font-size: 12px;
+    background: white;
+    width: 50%;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: red;
+    padding: 5px;
+    transition: 0.2s;
+}
+button:hover{
+    transform: scale(1.15);
+    color: white;
+    background-color: rgba(243, 59, 77, 0.933);
+}
