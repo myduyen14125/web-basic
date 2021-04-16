@@ -42,7 +42,7 @@ function addRow(hehe) {
       '" readonly value="' +
       document.getElementById("name").value +
       '">'+
-      '<span class="tooltiptext" id="tooltip' +i+ '" style = "display: none; font-size: 12px; color: red;">Only accept names as alphabetic characters!</span>';
+      '<span class="tooltiptext" id="tooltip' +i+ '" style = "display: none; font-size: 12px; color: white;">Only accept names as alphabetic characters!</span>';
     let x = document.getElementById("choose").selectedIndex;
     if (x == 1) {
       cell3.innerHTML +=
