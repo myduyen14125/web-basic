@@ -41,7 +41,8 @@ function addRow(hehe) {
       i +
       '" readonly value="' +
       document.getElementById("name").value +
-      '">';
+      '">'+
+      '<span class="tooltiptext" id="tooltip' +i+ '" style = "display: none; font-size: 12px; color: red;">Only accept names as alphabetic characters!</span>';
     let x = document.getElementById("choose").selectedIndex;
     if (x == 1) {
       cell3.innerHTML +=
@@ -110,40 +111,50 @@ function addRow(hehe) {
       '" onclick="cancelRow(this)" style ="display: none;">Cancel</button>';
     i++;
     tooltip.style.display = "none";
-    localStorage.setItem('row' + i, document.getElementById(""));
+
+    let object = {
+      order: cell1,
+      name: cell2,
+      select: cell3,
+      photo: cell4,
+      action: cell5,
     }
+    localStorage.setItem('object', JSON.stringify(person));
+
+  }
 }
 
 document.querySelector("#form").onsubmit = addRow;
 
-function editRow(element) {
-  let id = element.id.substring(7); //btnEdit1
+function editRow(event) {
+  let id = event.id.substring(7); //btnEdit1
   document.getElementById("input" + id).readOnly = false;
-
-  /*let x = document.getElementById("select" + i).selectedIndex;
+  
+  
+  let x = document.getElementById("select" + id).selectedIndex;
   console.log(x);
   if(x==1){
-    cell3.innerHTML = 
-    '<select id = "select' +i+ '">'+ 
+    cell3.innerHTML += 
+    
         '<option style = "display: block">' +document.getElementsByTagName("option")[x].value + '</option>' +
         '<option style = "display: block">' +document.getElementsByTagName("option")[x+1].value + '</option>' +
         '<option style = "display: block">' +document.getElementsByTagName("option")[x+2].value + '</option>';
   }
   if(x==2){
     cell3.innerHTML = 
-    '<select id = "select' +i+ '">'+ 
+    '<select id = "select' +id+ '">'+ 
         '<option style = "display: block">' +document.getElementsByTagName("option")[x].value + '</option>' +
         '<option style = "display: block">' +document.getElementsByTagName("option")[x+1].value + '</option>' +
         '<option style = "display: block">' +document.getElementsByTagName("option")[x-1].value + '</option>';
   }
   if(x==3){
     cell3.innerHTML = 
-    '<select id = "select' +i+ '">'+ 
+    '<select id = "select' +id+ '">'+ 
         '<option style = "display: block">' +document.getElementsByTagName("option")[x].value + '</option>' +
         '<option style = "display: block">' +document.getElementsByTagName("option")[x-1].value + '</option>' +
         '<option style = "display: block">' +document.getElementsByTagName("option")[x-2].value + '</option>';
   }
-  */
+  
 
   document.getElementById("btnEdit" + id).style.display = "none";
   document.getElementById("btnRemove" + id).style.display = "none";
@@ -159,11 +170,23 @@ function removeRow(element) {
 
 function saveRow(element) {
   let id = element.id.substring(7);
-  document.getElementById("input" + id).readOnly = true;
-  document.getElementById("btnEdit" + id).style.display = "inline-block";
-  document.getElementById("btnRemove" + id).style.display = "inline-block";
-  document.getElementById("btnSave" + id).style.display = "none";
-  document.getElementById("btnCancel" + id).style.display = "none";
+  let dem = 0;
+  let elName = document.getElementById("input" + id).value;
+  for (let j = 0; j < elName.length; j++) {
+    if (elName[j] >= "0" && elName[j] <= "9") {
+      dem = 1;
+      document.getElementById("tooltip" + id).style.display = "block";
+      break;
+    }
+  }
+  if (dem == 0) {
+    document.getElementById("input" + id).readOnly = true;
+    document.getElementById("btnEdit" + id).style.display = "inline-block";
+    document.getElementById("btnRemove" + id).style.display = "inline-block";
+    document.getElementById("btnSave" + id).style.display = "none";
+    document.getElementById("btnCancel" + id).style.display = "none";
+    document.getElementById("tooltip" + id).style.display = "none";
+  }
 }
 
 function cancelRow(element) {
