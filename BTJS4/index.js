@@ -110,7 +110,7 @@ function addRow(hehe) {
       '" onclick="cancelRow(this)" style ="display: none;">Cancel</button>';
     i++;
     tooltip.style.display = "none";
-    window.localStorage.setItem('order', cell1);
+    localStorage.setItem('row' + i, document.getElementById(""));
     }
 }
 
