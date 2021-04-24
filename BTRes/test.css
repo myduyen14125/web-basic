@@ -1,3 +1,6 @@
+*{
+    box-sizing: border-box;
+}
 body{
     margin: 0;
     padding: 0;
@@ -30,7 +33,7 @@ body{
 
 .name-box{
     height: 120vh;
-    width: 940px; 
+    width: 100%; 
     margin: auto;
     background-color: #dadada;
 }
@@ -54,10 +57,13 @@ h1, p{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    margin: auto;
+    width: 90%;
 }
 .photo-box{
-    width: 25%;
+    width: 22%;
+    margin: 5px;
+        padding:10px ;
 }
 img.small-photo{
     width: 100%;
@@ -65,13 +71,18 @@ img.small-photo{
     object-fit: cover;
 }
 
-@media screen and (max-width:800px) {
-    .photo-box {width:50%; }
+@media screen and (max-width:766px) {
+    .photo-box {
+        width:45%; 
+        margin: 10px;
+        padding:10px ;
+        box-sizing: border-box;
+    }
 }
-@media screen and (max-width:200px) {
+@media screen and (max-width:556px) {
     .photo-box {width:100%;}
 }
 
 .list-blog{
-    position: relative;
+    
 }
