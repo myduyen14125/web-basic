@@ -1,0 +1,131 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    color: #a4acc4;
+}
+a{
+    text-decoration: none;
+    color: #a4acc4;
+}
+body{
+    background-color: #10121b !important;
+}
+
+.header-box{
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    box-sizing: border-box;
+    background-color: #191d2b;
+    transition: 0.2s;
+}
+.header-image{
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-bottom: 1px solid #444955;
+}
+.header-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #2e344e;
+}
+.nav{
+    height: 55%;
+}
+.nav-link{
+    font-weight: 300 !important;
+    letter-spacing: 1.3px;
+}
+
+
+.blog{
+    width: calc(100% - 260px);
+    height: 100vh !important;
+}
+
+.title{
+    padding-top: 120px !important;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.title h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.title span{
+    font-size: 4.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -30px;
+    color: #141722;
+    font-weight: 900;
+}
+.progress{
+    width: 100px;
+    height: 5px !important;
+    background-color: #0c3360 !important;
+    position: absolute;
+    top: 50%; left: 0;
+}
+
+.card{
+    margin: auto;
+    background-color: #191d2b !important;
+    cursor: pointer;
+}
+.card .img{
+    overflow: hidden;
+}
+.card:hover img{
+    transform: scale(1.15);
+    object-fit: cover !important;
+    transition: 0.3s;
+}
+.card .date{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: 1.3rem;
+}
+.card .date b{
+    font-size: 2.3rem;
+    line-height: 30%;
+}
+
+.page-link{
+    font-size: 1.2rem;
+}
+.page-link:hover{
+    background-color: #ddd !important;
+    transition: 0.2s;
+}
+@media screen and (max-width: 1200px){
+    .header-box{
+        transform: translateX(-260px);
+        transition: 0.2s;
+    }
+    .blog{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    .title{
+        padding-top: 90px !important;
+    }
+    .title h2{
+        font-size: 2.3rem;
+    }
+    .title span{
+        font-size: 4rem;
+    }
+}
