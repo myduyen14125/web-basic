@@ -17,31 +17,81 @@
 
 </head>
 <body class="d-flex justify-content-end">
-  <div class="header-box border-right border-2 border-dark p-0">
-    <div class="header-image m-0 p-0">
-      <img src="avt.jpg" alt="">
-    </div>
-
-    <ul class="nav flex-column justify-content-center align-item-center text-center text-uppercase">
+  <nav class="navbar navbar-expand-sm navbar-dark fixed-top d-flex justify-content-between border-bottom border-2 border-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><img src="avt.jpg" style="width: 30px; height: 30px; border-radius: 100%;" alt=""> My blog</a>
+  
+    <!-- Links -->
+    <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="home.html">home</a>
+        <a class="nav-link" href="#">Life Sharing</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">about</a>
+        <a class="nav-link" href="#">Job </a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">resume</a>
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Programing
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">HTML</a>
+          <a class="dropdown-item" href="#">CSS</a>
+          <a class="dropdown-item" href="#">Java Script</a>
+        </div>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">portfolios</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="blog.html">blogs</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">contact</a>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Hehe link
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
       </li>
     </ul>
+    <form class="form-inline" action="">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+  </nav> 
+
+
+  <div class="header-box border-right border-2 border-dark p-0">
+    <div class="list-group mb-4 mt-4">
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white" data-toggle="collapse" data-target="#demo1">Readmore</a>
+      <div id="demo1" class="collapse" style="width: 80%; margin: auto;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sint molestiae aliquam, beatae quaerat aperiam. Quod, distinctio assumenda necessitatibus officia quaerat sed optio! Repudiandae consequatur ducimus iure aut beatae alias!
+      </div>
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white" data-toggle="collapse" data-target="#demo2">Current time</a>
+      <div id="demo2" class="collapse" style="width: 80%; margin: auto;">
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent">22/9/2019</li>
+          <li class="list-group-item bg-transparent">22/9/2020</li>
+          <li class="list-group-item bg-transparent">22/9/2021</li>
+        </ul> 
+      </div>
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white">Vlogs</a>
+    </div> 
+    <div class="list-group mb-3">
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white">Hot news</a>
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white">Second item</a>
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white">Third item</a>
+    </div>     
+    <div class="list-group">
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white" data-toggle="collapse" data-target="#demo3">Social Links</a>
+      <div id="demo3" class="collapse" style="width: 80%; margin: auto;">
+        <ul class="list-group">
+          <li class="list-group-item bg-transparent">Facebook</li>
+          <li class="list-group-item bg-transparent">Github</li>
+          <li class="list-group-item bg-transparent">LinkedIn</li>
+        </ul> 
+      </div>
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white">Second item</a>
+      <a href="#" class="list-group-item list-group-item-action bg-transparent text-white">Third item</a>
+    </div> 
   </div>
   
   <div class="blog">
