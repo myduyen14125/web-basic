@@ -6,14 +6,10 @@ a{
     text-decoration: none;
     color: #a4acc4;
 }
-li{
-    list-style: none;
-}
 body{
-    margin: 0;
-    padding: 0;
-    background-color: #10121b;
+    background-color: #10121b !important;
 }
+
 .header-box{
     width: 260px;
     height: 100%;
@@ -21,7 +17,7 @@ body{
     top: 0; left: 0;
     box-sizing: border-box;
     background-color: #191d2b;
-    border-right: 1.5px solid #444955;
+    transition: 0.2s;
 }
 .header-image{
     width: 100%;
@@ -33,137 +29,116 @@ body{
     border-bottom: 1px solid #444955;
 }
 .header-image img{
-    width: 186px;
-    height: 185px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
-    margin: 0;
     border: 7px solid #2e344e;
-
 }
-.header-menu{
-    border-bottom: 1px solid #444955;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    align-items: center;
+.nav{
     height: 55%;
 }
-.header-menu ul{
-    padding-inline-start: 0;
-    padding: 0;
-    width: 100%;
+.nav-link{
+    letter-spacing: 1.3px;
+    color: #a4acc4;
+    transition: 0.2s;
 }
-.header-menu ul li{
-    width: 100%;
-    margin: 0;
-    height: 38.8px;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    letter-spacing: 1.6px;
-    font-weight: bold;
+
+.nav-link:hover{
+    background-color: #0f7bff;
+    color: #a4acc4;
+    transition: 0.2s;
 }
 .footer{
-    text-align: center;
-    padding: 19px 0;
+    height: 11%;
 }
 
+.about{
+    width: calc(100% - 260px);
+    height: 100vh !important;
+}
 
-.about {
-    width: 100%;
-    height: 100vh;
-    vertical-align: middle;
-    margin: 0;
-    padding: 0;
+.title{
+    padding-top: 120px !important;
+    letter-spacing: 2px;
     box-sizing: border-box;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
-.about .big-container{
-    width: 77.8%;
-    height: 100%;
-    margin: 0;
-}
-.about .title{
-    padding-top: 80px;
-}
-.about .title h2{
-    font-size: 2.57rem;
-    line-height: 3.2857rem;
-    padding-bottom: 15px;
-    font-weight: 700;
-    position: relative;
-    color: white;
-}
-.about .title span{
-    line-height: 1;
-    position: absolute;
-    z-index: -1;
-    top: 20%;
-    transform: translateY(10px);
-    height: 1rem;
-    color: rgb(20, 23, 34);
-    font-size: 72px;
+.title h2{
+    font-size: 2.5rem;
     font-weight: 900;
-    display: inline-block;
-    margin: 0px;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-
-.about .container{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-end;
-}
-.about .img{
-    width: 45%;
+.title span{
+    font-size: 4.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
     position: relative;
+    top: -32px;
+    color: #141722;
+    font-weight: 900;
 }
-.about .img img{
-    width: 100%;
-    margin-left: -22px;
-    margin-top: 30px;
-    
-}
-.about .img div{
+.progress{
+    width: 100px;
+    height: 5px !important;
+    background-color: #0c3360 !important;
     position: absolute;
-    top: 32%;
-    left: 32%;
-    width: 29%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10vw;
+    top: 50%; left: 0;
 }
 
-.about .content{
-    width: 49%;
-    font-weight: 500;
-    margin-bottom: 15px;
+.card{
+    margin: auto;
+    background-color: #191d2b !important;
+    cursor: pointer;
 }
-.about .content h3{
-    font-size: 32px;
-    margin: 0 0 10px 0;
-    padding: 0;
+.card .img{
+    overflow: hidden;
+    transition: 0.3s;
 }
-.about .content p{font-size: 18.5px;}
-.about .content ul{padding-inline-start: 0;}
-.about ul li{
-    font-size: 18.5px;
-    list-style: none;
-    height: 28.8px;
-    margin: 0;
-    display: flex;
-    align-items: center;
-    margin: 0;
+.card img{
+    transition: 0.3s;
 }
-.about ul li b{width: 120px;}
-.about .content button{
-    margin: 0;
-    width: 30%;
-    height: 50px;
-    color: white;
-    background-color:#197fff;
+.card:hover img{
+    transform: scale(1.15);
+    object-fit: cover !important;
+    transition: 0.3s;
+}
+.card .date{
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    font-size: 1.3rem;
+}
+.card .date b{
+    font-size: 2.3rem;
+    line-height: 30%;
+}
+
+.page-link{
+    font-size: 1.2rem;
+}
+.page-link:hover{
+    background-color: #ddd !important;
+    transition: 0.2s;
+}
+@media screen and (max-width: 1200px){
+    .header-box{
+        transform: translateX(-260px);
+        transition: 0.2s;
+    }
+    .blog{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    .title{
+        padding-top: 90px !important;
+    }
+    .title h2{
+        font-size: 2.3rem;
+    }
+    .title span{
+        font-size: 4rem;
+    }
 }

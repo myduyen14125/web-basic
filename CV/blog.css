@@ -38,10 +38,19 @@ body{
     height: 55%;
 }
 .nav-link{
-    font-weight: 300 !important;
     letter-spacing: 1.3px;
+    color: #a4acc4;
+    transition: 0.2s;
 }
 
+.nav-link:hover{
+    background-color: #0f7bff;
+    color: #a4acc4;
+    transition: 0.2s;
+}
+.footer{
+    height: 11%;
+}
 
 .blog{
     width: calc(100% - 260px);
@@ -83,6 +92,10 @@ body{
 }
 .card .img{
     overflow: hidden;
+    transition: 0.3s;
+}
+.card img{
+    transition: 0.3s;
 }
 .card:hover img{
     transform: scale(1.15);

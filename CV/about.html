@@ -4,62 +4,77 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>About</title>
+    <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="about.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </head>
-<body>
-    <div class="header-box">
-        <div class="header-image">
-            <img src="avt.jpg" alt="">
-        </div>
-        
-        <div class="header-menu">
-            <ul>
-                <li><a href="home.html">HOME</a></li>
-                <li><a href="about.html">ABOUT</a></li>
-                <li><a href="">RESUME</a></li>
-                <li><a href="">PORTFOLIOS</a></li>
-                <li><a href="blog.html"> BLOGS</a></li>
-                <li><a href="">CONTACT</a></li>
-            </ul>
-        </div>
-        <div class="footer">
-            @2021 NuclearThemes
-        </div>
+<body class="d-flex justify-content-end">
+  <div class="header-box border-right border-2 border-dark p-0">
+    <div class="header-image m-0 p-0">
+      <img src="avt.jpg" alt="">
     </div>
 
-    <div class="about">
-        <div class="big-container">
-            <div class="title">
-                <h2>ABOUT ME</h2>
-                <span>ABOUT ME</span>
-            </div>
-    
-            <div class="container">
-                <div class="img">
-                    <img src="about-image.jpg" alt="">
-                    <div class="fa fa-search"></div>
-                </div>
-                <div class="content">
-                    <h3><b>I am</b>Devid Chester</h3>
-                    <p>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
-                    <ul>
-                        <li><b>Full name</b>: Devid Chester</li>
-                        <li><b>Age</b>: 24 Years</li>
-                        <li><b>Nationality</b>: American</li>
-                        <li><b>Languages</b>: English, French</li>
-                        <li><b>Address</b>: 121 King Street, Melbourne, Australia</li>
-                        <li><b>Freelance</b>: Available</li>
-                    </ul>
-                    <button>
-                        DOWNLOAD CV
-                    </button>
-                </div>
-        </div>
-        </div>
+    <ul class="nav flex-column justify-content-center text-center text-uppercase">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="home.html">home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link  bg-primary" href="about.html">about</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">resume</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">portfolios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blog.html">blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">contact</a>
+      </li>
+    </ul>
+    <div class="footer d-flex justify-content-center align-items-center border-top border-2 border-dark">
+      @2021 NuclearThemes
     </div>
+  </div>
+  
+  <div class="about">
+    <div class="container title">
+      <h2 class="text-white">ABOUT ME</h2>
+      <span class="">ABOUT ME
+        <div class="progress">
+          <div class="progress-bar" style="width:20%"></div>
+        </div> 
+      </span>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 p-3">
+            <div class="img"><img src="about-image.jpg" class="card-img rounded-0" alt="..."></div>
+        </div>
+        <div class="col-md-6 p-3">
+          <div class="card p-3 rounded-0">
+            <div class="img"><img src="blog-image-2.jpg" class="card-img-top rounded-0" alt="..."></div>
+            <h5 class="pt-3">Installing NodeJS on your device.</h5>
+            <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
+          </div>
+        </div>
+      </div>
+        
+        
+    </div>
+    </div>
+  </div>
 </body>
 </html>
