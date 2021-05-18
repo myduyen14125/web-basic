@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="blog.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,29 +18,29 @@
 
 </head>
 <body class="d-flex justify-content-end">
-  <div class="header-box border-right border-2 border-dark p-0">
+  <div id="header-box" class="header-box border-right border-2 border-dark p-0">
     <div class="header-image m-0 p-0">
       <img src="avt.jpg" alt="">
     </div>
 
     <ul class="nav flex-column justify-content-center text-center text-uppercase">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="home.html">home</a>
+        <a class="nav-link load-menu" aria-current="page" href="home.html">home</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="about.html">about</a>
+        <a class="nav-link load-menu" href="about.html">about</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">resume</a>
+        <a class="nav-link load-menu" href="draft.html">resume</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">portfolios</a>
+        <a class="nav-link load-menu" href="portfolios.html">portfolios</a>
       </li>
       <li class="nav-item">
         <a class="nav-link bg-primary" href="blog.html">blogs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">contact</a>
+        <a class="nav-link load-menu" href="#">contact</a>
       </li>
     </ul>
     <div class="footer d-flex justify-content-center align-items-center border-top border-2 border-dark">
@@ -48,6 +48,12 @@
     </div>
   </div>
   
+  <!-- Hidden bar -->
+  <div id="hidden-bar" class="hidden-bar border border-2 border-dark">
+    <div class="fa fa-bars"></div>
+  </div> 
+
+
   <div class="blog">
     <div class="container title">
       <h2 class="text-white">RECENT BLOGS</h2>
@@ -62,42 +68,42 @@
       <div class="row">
         <div class="col-md-6 p-3">
           <div class="card p-3 rounded-0">
-            <div class="img"><img src="blog-image-1.jpg" class="card-img-top rounded-0" alt="..."></div>
+            <div class="img"><img src="Blog/blog-image-1.jpg" class="card-img-top rounded-0" alt="..."></div>
             <h5 class="pt-3">Markdown & Html supported blog.</h5>
             <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
           </div>
         </div>
         <div class="col-md-6 p-3">
           <div class="card p-3 rounded-0">
-            <div class="img"><img src="blog-image-2.jpg" class="card-img-top rounded-0" alt="..."></div>
+            <div class="img"><img src="Blog/blog-image-2.jpg" class="card-img-top rounded-0" alt="..."></div>
             <h5 class="pt-3">Installing NodeJS on your device.</h5>
             <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
           </div>
         </div>
         <div class="col-md-6 p-3">
           <div class="card p-3 rounded-0">
-            <div class="img"><img src="blog-image-3.jpg" class="card-img-top rounded-0" alt="..."></div>
+            <div class="img"><img src="Blog/blog-image-3.jpg" class="card-img-top rounded-0" alt="..."></div>
             <h5 class="pt-3">UI/UX design starter with Adobe XD.</h5>
             <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
           </div>
         </div>
         <div class="col-md-6 p-3">
           <div class="card p-3 rounded-0">
-            <div class="img"><img src="blog-image-4.jpg" class="card-img-top rounded-0" alt="..."></div>
+            <div class="img"><img src="Blog/blog-image-4.jpg" class="card-img-top rounded-0" alt="..."></div>
             <h5 class="pt-3">Boost your post for increasing sales.</h5>
             <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
           </div>
         </div>
         <div class="col-md-6 p-3">
           <div class="card p-3 rounded-0">
-            <div class="img"><img src="blog-image-5.jpg" class="card-img-top rounded-0" alt="..."></div>
+            <div class="img"><img src="Blog/blog-image-5.jpg" class="card-img-top rounded-0" alt="..."></div>
             <h5 class="pt-3">Difference between GatsbyJS & NextJS.</h5>
             <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
           </div>
         </div>
         <div class="col-md-6 p-3">
           <div class="card p-3 rounded-0">
-            <div class="img"><img src="blog-image-6.jpg" class="card-img-top rounded-0" alt="..."></div>
+            <div class="img"><img src="Blog/blog-image-6.jpg" class="card-img-top rounded-0" alt="..."></div>
             <h5 class="pt-3">How to choose javascript framework for project.</h5>
             <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
           </div>
@@ -126,5 +132,7 @@
     </div>
     </div>
   </div>
+
+  <script src="home.js"></script>
 </body>
 </html>

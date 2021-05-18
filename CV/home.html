@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="home.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -17,7 +17,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <div class="header-box border-right border-2 border-dark p-0">
+    <div id="header-box" class="header-box border-right border-2 border-dark p-0">
         <div class="header-image m-0 p-0">
           <img src="avt.jpg" alt="">
         </div>
@@ -27,25 +27,31 @@
             <a class="nav-link active bg-primary" aria-current="page" href="home.html">home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="about.html">about</a>
+            <a class="nav-link load-menu" href="about.html">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">resume</a>
+            <a class="nav-link load-menu" href="#">resume</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">portfolios</a>
+            <a class="nav-link load-menu" href="portfolios.html">portfolios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="blog.html">blogs</a>
+            <a class="nav-link load-menu" href="blog.html">blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contact</a>
+            <a class="nav-link load-menu" href="#">contact</a>
           </li>
         </ul>
         <div class="footer d-flex justify-content-center align-items-center border-top border-2 border-dark">
           @2021 NuclearThemes
         </div>
       </div>
+
+  <!-- Hidden bar -->
+  <div id="hidden-bar" class="hidden-bar border border-2 border-dark">
+    <div class="fa fa-bars"></div>
+  </div>  
+  
     <!-- Home page -->
     <div class="home">
         <div class="snow">  ❅  </div>
@@ -72,6 +78,6 @@
     </div>
 
 
-
+    <script src="home.js"></script>
 </body>
 </html>

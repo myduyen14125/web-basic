@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="about.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -18,29 +18,29 @@
 
 </head>
 <body class="d-flex justify-content-end">
-  <div class="header-box border-right border-2 border-dark p-0">
+  <div id="header-box" class="header-box border-right border-2 border-dark p-0">
     <div class="header-image m-0 p-0">
       <img src="avt.jpg" alt="">
     </div>
 
     <ul class="nav flex-column justify-content-center text-center text-uppercase">
       <li class="nav-item">
-        <a class="nav-link active" aria-current="page" href="home.html">home</a>
+        <a class="nav-link load-menu" aria-current="page" href="home.html">home</a>
       </li>
       <li class="nav-item">
         <a class="nav-link  bg-primary" href="about.html">about</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">resume</a>
+        <a class="nav-link load-menu" href="draft.html">resume</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">portfolios</a>
+        <a class="nav-link load-menu" href="portfolios.html">portfolios</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="blog.html">blogs</a>
+        <a class="nav-link load-menu" href="blog.html">blogs</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">contact</a>
+        <a class="nav-link load-menu" href="#">contact</a>
       </li>
     </ul>
     <div class="footer d-flex justify-content-center align-items-center border-top border-2 border-dark">
@@ -48,8 +48,17 @@
     </div>
   </div>
   
+  <!-- Hidden bar -->
+  <div id="hidden-bar" class="hidden-bar border border-2 border-dark">
+    <div class="fa fa-bars"></div>
+  </div>  
+
+
+
   <div class="about">
-    <div class="container title">
+
+    <!-- About title -->
+    <div class="container title ">
       <h2 class="text-white">ABOUT ME</h2>
       <span class="">ABOUT ME
         <div class="progress">
@@ -60,21 +69,106 @@
 
     <div class="container">
       <div class="row">
-        <div class="col-md-6 p-3">
+        <div class="col-md-12 col-lg-6 p-3">
             <div class="img"><img src="about-image.jpg" class="card-img rounded-0" alt="..."></div>
         </div>
-        <div class="col-md-6 p-3">
-          <div class="card p-3 rounded-0">
-            <div class="img"><img src="blog-image-2.jpg" class="card-img-top rounded-0" alt="..."></div>
-            <h5 class="pt-3">Installing NodeJS on your device.</h5>
-            <div class="container date text-center bg-primary p-3 text-white"><b class="text-white m-0">12</b><br>May</div>
+        <div class="col-md-12 col-lg-6 p-3">
+          <div class="content">
+            <h3><b>I am</b>Devid Chester</h3>
+            <p>I am a frontend web developer. I can provide clean code and pixel perfect design. I also make website more & more interactive with web animations.</p>
+            <ul>
+                <li><b>Full name</b>: Devid Chester</li>
+                <li><b>Age</b>: 24 Years</li>
+                <li><b>Nationality</b>: American</li>
+                <li><b>Languages</b>: English, French</li>
+                <li><b>Address</b>: 121 King Street, Melbourne, Australia</li>
+                <li><b>Freelance</b>: Available</li>
+            </ul>
+            <button>
+                DOWNLOAD CV
+            </button>
           </div>
         </div>
       </div>
-        
-        
     </div>
+
+    <!-- Service -->
+    <div class="container title">
+      <h2 class="text-white">SERVICES</h2>
+      <span class="">SERVICES
+        <div class="progress">
+          <div class="progress-bar" style="width:20%"></div>
+        </div> 
+      </span>
     </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-4 p-3">
+          <div class="service-box p-3">
+            <div class="symbol"><div class="fa fa-paw"></div></div>
+            <h3>Web Design</h3>
+            <div class="space"></div><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, obcaecati dicta! Aliquid voluptatem.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 p-3">
+          <div class="service-box p-3">
+            <div class="symbol"><div class="fa fa-code"></div></div>
+            <h3>Web Development</h3>
+            <div class="space"></div><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, obcaecati dicta! Aliquid voluptatem.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 p-3">
+          <div class="service-box p-3">
+            <div class="symbol"><div class="fa fa-mobile"></div></div>
+            <h3>Mobile Application</h3>
+            <div class="space"></div><br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, obcaecati dicta! Aliquid voluptatem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="container title">
+      <h2 class="text-white">REVIEWS</h2>
+      <span class="">REVIEWS
+        <div class="progress">
+          <div class="progress-bar" style="width:20%"></div>
+        </div> 
+      </span>
+    </div>    
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="review-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi ex exercitationem enim natus, quibusdam animi provident debitis.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="review-box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos eligendi ex exercitationem enim natus, quibusdam animi provident debitis.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Reviews -->
+    <div class="container title">
+      <h2 class="text-white">REVIEWS</h2>
+      <span class="">REVIEWS
+        <div class="progress">
+          <div class="progress-bar" style="width:20%"></div>
+        </div> 
+      </span>
+    </div>  
+    
+    
   </div>
+  
+  <script src="home.js"></script>
 </body>
 </html>
