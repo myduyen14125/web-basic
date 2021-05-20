@@ -1,0 +1,48 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav{
+   background-color: #5597b4; 
+   height: 8vh;
+   padding: 0;
+   color: white;
+   font-size: 1.3rem;
+   font-weight: 900;
+}
+#nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-inline-start: 0;
+}
+#nav ul li{
+    display: inline-block;
+    padding: 0 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#content{
+    margin: 50px;
+    text-align: center;
+    font-size: 1.9rem;
+    color: grey;
+    font-weight: bold;
+}
+.chosen{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+}
+.red{
+    background-color: #ee3e5b;
+}

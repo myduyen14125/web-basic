@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Task 1</title>
+    <link rel="stylesheet" href="test.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav id="nav">
+      <ul>
+        <li v-on:click="chooseOption(home)" v-bind:class="{red: home.available}">{{home.name}}</li>
+        <li v-on:click="chooseOption(projects)" v-bind:class="{red: projects.available}">{{projects.name}}</li>
+        <li v-on:click="chooseOption(services)" v-bind:class="{red: services.available}">{{services.name}}</li>
+        <li v-on:click="chooseOption(contact)" v-bind:class="{red: contact.available}">{{contact.name}}</li>
+      </ul>
+      
+    </nav>
+    
+    <div id="content">
+      You choose <span class="chosen">{{choseItem}}</span>
+    </div>
+
+    <script src="test.js"></script>
+  </body>
+</html>
