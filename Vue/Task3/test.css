@@ -41,6 +41,8 @@ li{
 .box ul{
     display: flex;
     flex-wrap: wrap;
+    width: 80%;
+    margin: auto;
 }
 img{
     width: 250px;
