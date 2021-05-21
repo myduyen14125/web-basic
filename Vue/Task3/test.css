@@ -3,7 +3,9 @@ body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
 }
-
+li{
+    list-style: none;
+}
 #nav{
    background-color: #198192; 
    height: 8vh;
@@ -34,11 +36,11 @@ body{
 .box{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
-.box li{
-    list-style: none;
-    border-bottom: 3px solid grey;
-    padding: 2px;
+.box ul{
+    display: flex;
+    flex-wrap: wrap;
 }
 img{
     width: 250px;

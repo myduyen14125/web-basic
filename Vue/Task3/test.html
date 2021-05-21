@@ -20,15 +20,13 @@
             <ul>
                 <li v-on:click="changeSmall"><div class="fa fa-bars"></div></li>
                 <li v-on:click="changeBig"><div class="fa fa-th"></div></li>
-                <p>Small {{small}}</p>
-                <p>Big {{big}}</p>
             </ul>
             
         </nav>
         <div class="box">
             <ul>
                 <li v-for="article in articles">
-                    <a v-bind:href="article.url" class="eachItem">
+                    <a v-bind:href="article.url" v-bind:class="{grid :available, eachItem :true}">
                       <img v-bind:src="article.img" alt="">
                       <span v-bind:class="{hide: article.available}">{{article.title}}</span>
                     </a>

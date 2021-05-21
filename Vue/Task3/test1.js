@@ -1,8 +1,6 @@
 var content = new Vue({
     el: "#content",
     data: {
-      small:  0,
-      big: 0,
       articles: [
         {
           title: "What You Need To Know About CSS Variables",
@@ -32,14 +30,14 @@ var content = new Vue({
     },
     methods: {
         changeSmall: function(){
-          this.articles.available = false;
-          this.big = 0;
-          this.small = 1;
+            for(let i = 0; i <= 4; i++){
+                this.articles[i].available = false;
+            }
         },
         changeBig: function(){
-          this.articles.available = true;
-          this.big = 1;
-          this.small = 0;
+            for(let i = 0; i <= 4; i++){
+                this.articles[i].available = true;
+            }
         }
       },
   });
