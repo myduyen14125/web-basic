@@ -39,6 +39,10 @@ li{
     font-size: 1.1rem;
     border-radius: 5px;
     cursor: pointer;
+    transition: 0.2s;
+}
+li:hover{
+    transform: translateY(-2px);
 }
 .total{
     margin: 20px 35px;

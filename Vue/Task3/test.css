@@ -1,0 +1,53 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nav{
+   background-color: #198192; 
+   height: 8vh;
+   padding: 0;
+   color: white;
+   font-size: 1.3rem;
+}
+#nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding-inline-start: 0;
+}
+#nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #15515a;
+    border-radius: 5px;
+}
+#content{
+    display: flex;
+    justify-content: center;
+}
+#content li{
+    list-style: none;
+    border-bottom: 3px solid grey;
+    padding: 2px;
+}
+img{
+    width: 250px;
+    margin: 10px;
+}
+.eachItem {
+    display: flex;
+    align-items: center;
+}
+.hide{
+    display: none;
+}

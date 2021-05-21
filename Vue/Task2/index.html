@@ -19,14 +19,14 @@
         <h1>Services</h1>
         <ul>
             <li v-for="(service, index) in services" v-on:click="choose(index)" v-bind:class="{green: service.available}">
-              <span>{{index}} . {{service.name}}</span>
-              <span>{{service.price}}.00</span>
+              <span>{{service.name}}</span>
+              <span>${{service.price}}.00</span>
             </li>
         </ul>
         <hr>
         <div id="total" class="total"> 
           <span>Total:</span>
-          <span>{{total}}.00</span>
+          <span>${{total}}.00</span>
         </div>
       </div>
     </div>
