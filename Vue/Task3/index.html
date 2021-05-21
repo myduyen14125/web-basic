@@ -15,26 +15,26 @@
     />
   </head>
   <body>
-  
-    <nav id="nav">
-        <ul>
-            <li v-on:click="changeSmall"><div class="fa fa-bars"></div></li>
-            <li v-on:click="changeBig"><div class="fa fa-th"></div></li>
-            <p>Small {{small}}</p>
-            <p>Big {{big}}</p>
-        </ul>
-        
-    </nav>
-    <div id="content" v-bind:class="{grid}">
-        <ul>
-            <li v-for="article in articles">
-                <a v-bind:href="article.url" class="eachItem">
-                  <img v-bind:src="article.img" alt="">
-                  <span v-bind:class="{hide: article.available}">{{article.title}}</span>
-                </a>
-            </li>
-        </ul>
+    <div id="content">
+        <nav id="nav">
+            <ul>
+                <li v-on:click="changeSmall"><div class="fa fa-bars"></div></li>
+                <li v-on:click="changeBig"><div class="fa fa-th"></div></li>
+            </ul>
+            
+        </nav>
+        <div class="box">
+            <ul>
+                <li v-for="article in articles">
+                    <a v-bind:href="article.url" v-bind:class="{grid :available, eachItem :true}">
+                      <img v-bind:src="article.img" alt="" v-bind:class="{bigImg :available}">
+                      <span v-bind:class="{hide: article.available}">{{article.title}}</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </div>
-    <script src="test.js"></script>
+    
+    <script src="test1.js"></script>
   </body>
 </html>

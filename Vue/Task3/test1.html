@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vue Task 3</title>
+    <link rel="stylesheet" href="test.css" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+  
+    <nav id="nav">
+        <ul>
+            <li v-on:click="changeSmall"><div class="fa fa-bars"></div></li>
+            <li v-on:click="changeBig"><div class="fa fa-th"></div></li>
+            <p>Small {{small}}</p>
+            <p>Big {{big}}</p>
+        </ul>
+        
+    </nav>
+    <div id="content" v-bind:class="{grid}">
+        <ul>
+            <li v-for="article in articles">
+                <a v-bind:href="article.url" class="eachItem">
+                  <img v-bind:src="article.img" alt="">
+                  <span v-bind:class="{hide: article.available}">{{article.title}}</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <script src="test.js"></script>
+  </body>
+</html>
