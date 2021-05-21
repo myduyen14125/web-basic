@@ -11,6 +11,9 @@ body{
    color: white;
    font-size: 1.3rem;
    font-weight: 900;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 #nav ul{
     display: flex;
