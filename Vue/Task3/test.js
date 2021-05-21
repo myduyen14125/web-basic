@@ -28,13 +28,6 @@ var content = new Vue({
       },
     ],
   },
-  // // methods: {
-  // //   changeGrid: function(x){
-  // //     navbar.small;
-  // //     if(navbar.x % 2 != 0) this.articles.available = true;
-  // //     else this.articles.available = false;
-  // //   }
-  // }
 });
 var navbar = new Vue({
   el: '#nav',
