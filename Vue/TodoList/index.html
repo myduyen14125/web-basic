@@ -18,7 +18,7 @@
       <div id="list">
         <h1>To do List</h1>
 
-        <div v-if="!isEditing">
+        <div v-if="!isEditing" style="margin-bottom: 5vh;">
           <input type="text" v-model="todo"/>
           <input type="submit" value="Add" v-on:click="storeTodo"/>
         </div>
@@ -34,7 +34,7 @@
               <span style="width: 70%; text-align: left;">{{ todo }}</span>
               <div style="width: 30%;">
                 <button @click="editTodo(index, todo)">Edit</button>
-                <button @click="deleteTdo(index)">Delete</button>
+                <button @click="deleteTodo(index)">Delete</button>
               </div>
               
             </li>

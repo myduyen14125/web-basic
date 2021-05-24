@@ -66,11 +66,15 @@ input[type = text]{
     margin: auto;
     width: 65%;
     font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
 }
 input[type = submit]{
     font-size: 1.1rem;
     background-color: #00ff73;
     width: 20%;
+    padding: 10px;
+    border-radius: 5px;
 }
 button{
     background-color: #151729;

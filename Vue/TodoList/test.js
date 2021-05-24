@@ -5,8 +5,6 @@ var list = new Vue({
         isEditing: false,
         todo: '',
         todos: [
-            'Hehe1',
-            'hehe2',
 
         ]
     },
