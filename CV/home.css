@@ -69,11 +69,11 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.2;
+    opacity: 0.3;
+    transition: 0.3s;
 }
 .load-menu:hover::before{
     width: 100%;
-    transition: 0.3s;
 }
 
 .footer{
@@ -109,7 +109,10 @@ body{
     margin-top: 15px;
     font-size: 1.25rem;
     line-height: 2rem;
-    width: 70%; margin: auto;
+    width: 73%; margin: auto;
+}
+.blue{
+    color: #0f7bff;
 }
 .home ul{
     display: flex;
@@ -129,6 +132,14 @@ body{
     border: 1px solid #a4a4a4;
     border-radius: 100%;
     padding: 0px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.home ul li:hover{
+    border: 1px solid #0f7bff;
+}
+.home ul li:hover .fa{
+    color: #0f7bff;
 }
 .snow{
     color: #a4acc4;
@@ -209,8 +220,6 @@ body{
     50% {transform: translateX(80px);}
 }
 
-
-
 @media screen and (max-width: 1200px){
     .header-box{
         transform: translateX(-260px);
@@ -223,5 +232,44 @@ body{
         display: block;
         transition: 0.3s;
         z-index: 100;
+    }
+}
+@media screen and (max-width: 960px){
+    .home .content h1{
+        font-size: 3rem;
+    }
+    .home .content p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 768px){
+    .home .content h1{
+        font-size: 2.3rem;
+    }
+    .home .content p{
+        font-size: 1.1rem;
+    }
+    .home .content ul{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 576px){
+    .home .content h1{
+        font-size: 2.8rem;
+    }
+    .home .content h1 .blue{
+        display: block;
+        margin: 10px;
+    }
+    .home .content p{
+        font-size: 1rem;
+        width: 90%;
+    }
+    .home .content ul{
+        font-size: 1rem;
+    }
+    .home ul li{
+        width: 35px;
+        height: 35px;
     }
 }

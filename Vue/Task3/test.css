@@ -41,12 +41,16 @@ li{
 .box ul{
     display: flex;
     flex-wrap: wrap;
-    width: 80%;
+    width: 75%;
     margin: auto;
 }
 img{
     width: 250px;
     margin: 10px;
+}
+.bigImg{
+    width: 150%;
+    height: auto;
 }
 .eachItem {
     display: flex;

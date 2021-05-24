@@ -21,6 +21,7 @@ body{
     left: 0;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 10;
 }
 .header-box{
     width: 260px;
@@ -68,11 +69,11 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.2;
+    opacity: 0.3;
+    transition: 0.3s;
 }
 .load-menu:hover::before{
     width: 100%;
-    transition: 0.3s;
 }
 
 .footer{
@@ -102,7 +103,7 @@ body{
     margin-top: 0px;
     padding-top: 0px;
     position: relative;
-    top: -32px;
+    top: -30px;
     color: #141722;
     font-weight: 900;
 }
@@ -113,28 +114,72 @@ body{
     position: absolute;
     top: 50%; left: 0;
 }
-
+.container .row .img{
+    width: fit-content;
+    block-size: fit-content;
+    position: relative;
+}
+.container .row .img::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color: #0f7bff;
+    width: 16px;
+    height: 62%;
+    opacity: 0.7;
+}
+.container .row .img::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #0f7bff;
+    width: 16px;
+    height: 62%;
+    opacity: 0.7;
+}
+.container .row .img .fa{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 1.5rem;
+    color: white;
+    opacity: 0;
+    transition: 0.2s;
+}
+.container .row .img:hover .fa{
+    top: 40%;
+    left: 42%;
+    font-size: 7rem;
+    transition: 0.2s;
+    opacity: 0.65;
+}
 .about .content{
     font-weight: 100;
-    line-height: 1.9;
+    line-height: 1.8;
 }
 .about .content h3{
     font-size: 32px;
-    margin: 0 0 10px 0;
+    margin: 0 0 5px 0;
     padding: 0;
+    color: #0f7bff;
 }
-.about .content p{font-size: 18.5px;}
+.about .content p{
+    font-size: 18.5px; 
+    margin: 0;
+}
 .about .content ul{padding-inline-start: 0;}
 .about ul li{
     font-size: 18.5px;
     list-style: none;
-    height: 28.8px;
     margin: 0;
     display: flex;
     align-items: center;
     margin: 0;
+    display: flex;
 }
-.about ul li b{width: 120px;}
+.about .content ul li b{width: 120px;}
+.about .content ul li span{width: 80%;}
 .about .content button{
     margin: 0;
     width: 200px;
@@ -177,6 +222,7 @@ body{
     background-color: #191d2b;
     font-size: 1.2rem;
     border-left: #343A40 5px solid;
+    position: relative;
 }
 .review-box::after{
     content: "";
@@ -188,6 +234,13 @@ body{
     background-color: #191d2b;
     transform: rotate(45deg);
     transform: skewY(-45deg);
+}
+.author{
+    margin: 50px 0 100px 0;
+}
+.author .name{
+    color: white;
+    font-size: 1.35rem;
 }
 @media screen and (max-width: 1200px){
     .header-box{
