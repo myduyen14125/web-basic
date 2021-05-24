@@ -45,6 +45,7 @@ li{
 li:hover{
     transform: translateY(-2px);
 }
+
 .total{
     margin: 20px 35px;
     padding: 10px;
@@ -60,10 +61,16 @@ span{
 .green{
     background-color: #00ff73;
 }
-input{
+input[type = text]{
     color: #151729;
     margin: auto;
-    width: 80%;
+    width: 65%;
+    font-size: 1.1rem;
+}
+input[type = submit]{
+    font-size: 1.1rem;
+    background-color: #00ff73;
+    width: 20%;
 }
 button{
     background-color: #151729;

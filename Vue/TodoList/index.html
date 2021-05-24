@@ -31,8 +31,8 @@
 
         <ul>
             <li v-for="(todo, index) in todos">
-              {{ todo }}
-              <div>
+              <span style="width: 70%; text-align: left;">{{ todo }}</span>
+              <div style="width: 30%;">
                 <button @click="editTodo(index, todo)">Edit</button>
                 <button @click="deleteTdo(index)">Delete</button>
               </div>
