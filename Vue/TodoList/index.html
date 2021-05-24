@@ -17,10 +17,27 @@
     <div class="content">
       <div id="list">
         <h1>To do List</h1>
-        <input type="text" v-model="todo"/>
-        <input type="submit" value="add"/>
+
+        <div v-if="!isEditing">
+          <input type="text" v-model="todo"/>
+          <input type="submit" value="Add" v-on:click="storeTodo"/>
+        </div>
+
+        <div v-else>
+          <input type="text" v-model="todo"/>
+          <input type="submit" value="update" @click="updateTodo"/>
+        </div>
+
+
         <ul>
-            <li v-for="todo in todos">{{ todo }}</li>
+            <li v-for="(todo, index) in todos">
+              {{ todo }}
+              <div>
+                <button @click="editTodo(index, todo)">Edit</button>
+                <button @click="deleteTdo(index)">Delete</button>
+              </div>
+              
+            </li>
         </ul>
 
 
