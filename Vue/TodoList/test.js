@@ -3,27 +3,27 @@ var list = new Vue({
     data: {
         selectedIndex: null,
         isEditing: false,
-        todo: '',
-        todos: [
+        list: '',
+        lists: [
 
         ]
     },
     methods: {
-        storeTodo: function(){
-            this.todos.push(this.todo)
-            this.todo = ''
+        storeList: function(){
+            this.lists.push(this.list)
+            this.list = ''
         },
-        editTodo(index, todo){
-            this.todo = todo
+        editList(index, list){
+            this.list = list
             this.selectedIndex = index
             this.isEditing = true
         },
-        updateTodo(){
-            this.todos.splice(this.selectedIndex, 1, this.todo)
+        updateList(){
+            this.lists.splice(this.selectedIndex, 1, this.list)
             this.isEditing = false
         },
-        deleteTodo(index){
-            this.todos.splice(index, 1)
+        deleteList(index){
+            this.lists.splice(index, 1)
         }
     },
   });

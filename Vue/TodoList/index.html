@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vue Task 2</title>
+    <title>Vue To Do List</title>
     <link rel="stylesheet" href="test.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -19,22 +19,22 @@
         <h1>To do List</h1>
 
         <div v-if="!isEditing" style="margin-bottom: 5vh;">
-          <input type="text" v-model="todo"/>
-          <input type="submit" value="Add" v-on:click="storeTodo"/>
+          <input type="text" v-model="list"/>
+          <input type="submit" value="Add" v-on:click="storeList"/>
         </div>
 
         <div v-else>
-          <input type="text" v-model="todo"/>
-          <input type="submit" value="update" @click="updateTodo"/>
+          <input type="text" v-model="list"/>
+          <input type="submit" value="update" @click="updateList"/>
         </div>
 
 
         <ul>
-            <li v-for="(todo, index) in todos">
-              <span style="width: 70%; text-align: left;">{{ todo }}</span>
+            <li v-for="(list, index) in lists">
+              <span style="width: 70%; text-align: left;">{{ list }}</span>
               <div style="width: 30%;">
-                <button @click="editTodo(index, todo)">Edit</button>
-                <button @click="deleteTodo(index)">Delete</button>
+                <button @click="editList(index, list)">Edit</button>
+                <button @click="deleteList(index)">Delete</button>
               </div>
               
             </li>
