@@ -22,6 +22,7 @@ body{
     cursor: pointer;
     transition: 0.3s;
     z-index: 10;
+    background-color: #141722;
 }
 .header-box{
     width: 260px;
@@ -80,11 +81,11 @@ body{
     height: 11%;
 }
 
-.about{
+.portfolio{
     width: calc(100% - 260px);
     height: 100vh !important;
 }
-.about .container{
+.portfolio .container{
     margin-bottom: -41px;
 }
 .title{
@@ -114,6 +115,61 @@ body{
     position: absolute;
     top: 50%; left: 0;
 }
+
+/* Each photo-box */
+.photo-box{
+    position: relative;
+}
+.photo-box::before{
+    content:'';
+    position: absolute;
+    width: 0px;
+    height: 86%;
+    top: 7%;
+    left: 5%;
+    background-color: white;
+    opacity: 0.8;
+    transition: 0.5s;
+}
+.photo-box:hover::before{
+    width: 90%;
+}
+.photo-box .fa{
+    width: 45px;
+    height: 45px;
+    background-color: #AFB6Cb;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.photo-box .fa-search-plus{
+    position: absolute;
+    bottom: 25%;
+    left: 35%;
+    opacity: 0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+}
+.photo-box .fa-link{
+    position: absolute;
+    bottom: 25%;
+    right: 35%;
+    opacity: 0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+}
+.photo-box:hover .fa-search-plus, .photo-box:hover .fa-link{
+    opacity: 1;
+    bottom: 43%;
+}
+.photo-box .fa:hover{
+    background-color: #0f7bff;
+}
+
 .product{
     margin: 15px 0 30px;
 }
@@ -125,12 +181,23 @@ body{
     font-size: 1.2rem;
 }
 
+.container .pagination{
+    padding-bottom: 120px;
+}
+.pagination .page-link{
+    font-size: 1.2rem;
+}
+.pagination .page-link:hover{
+    background-color: #ddd !important;
+    transition: 0.2s;
+}
+
 @media screen and (max-width: 1200px){
     .header-box{
         transform: translateX(-260px);
         transition: 0.2s;
     }
-    .about{
+    .portfolio{
         width: 100%;
     }
     .hidden-bar{

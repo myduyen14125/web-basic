@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="content">
-      <div id="list">
+      <div id="tolist">
         <h1>To do List</h1>
 
         <div v-if="!isEditing" style="margin-bottom: 5vh;">
@@ -31,7 +31,8 @@
 
         <ul>
             <li v-for="(list, index) in lists">
-              <span style="width: 65%; text-align: left;">{{ list }}</span>
+              <input type="checkbox" value="index" v-model="categories">
+              <span style="width: 65%; text-align: left;"> {{ list }}</span>
               <div style="width: 35%;">
                 <button @click="editList(index, list)">Edit</button>
                 <button @click="deleteList(index)">Delete</button>
@@ -39,7 +40,7 @@
               
             </li>
         </ul>
-
+        
 
       </div>
     </div>

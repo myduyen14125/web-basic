@@ -1,12 +1,10 @@
 var list = new Vue({
-    el: "#list",
+    el: "#tolist",
     data: {
         selectedIndex: null,
         isEditing: false,
         list: '',
-        lists: [
-
-        ]
+        lists: [],
     },
     methods: {
         storeList: function(){

@@ -22,6 +22,7 @@ body{
     cursor: pointer;
     transition: 0.3s;
     z-index: 10;
+    background-color: #141722;
 }
 .header-box{
     width: 260px;

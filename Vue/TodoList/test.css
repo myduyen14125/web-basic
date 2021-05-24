@@ -14,7 +14,7 @@ body{
     justify-content: center;
     height: 100vh;
 }
-#list{
+#tolist{
     margin: auto;
     width: 600px;
     border-radius: 10px;
@@ -47,35 +47,30 @@ li:hover{
     transform: translateY(-2px);
 }
 
-.total{
-    margin: 20px 35px;
-    padding: 10px;
-    font-size: 1.1rem;
-    display: flex;
-    justify-content: space-between;
-    
-}
 span{
     margin: 0;
     padding: 0;
 }
-.green{
-    background-color: #00ff73;
-}
-input[type = text]{
+input[type = 'text']{
     color: #151729;
     margin: auto;
     width: 65%;
     font-size: 1.1rem;
     padding: 10px;
     border-radius: 5px;
+    outline: none;
 }
-input[type = submit]{
+input[type = 'submit']{
     font-size: 1.1rem;
     background-color: #00ff73;
     width: 20%;
     padding: 10px;
     border-radius: 5px;
+}
+input[type = 'checkbox']{
+    width:20px;
+    height:20px;
+    margin-right: 10px;
 }
 button{
     background-color: #151729;
