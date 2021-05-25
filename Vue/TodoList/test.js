@@ -42,7 +42,9 @@ var list = new Vue({
                 //alert(this.selectedIndex)
                 this.lists[this.selectedIndex]={
                     name: this.currentInput,
-                    done: false
+                    count: 0,
+                    done: false,
+                
                 }
                 this.isEditing = false
             }

@@ -40,7 +40,6 @@ li{
     background-color: #e45e;
     font-size: 1.1rem;
     border-radius: 5px;
-    cursor: pointer;
     transition: 0.2s;
 }
 li:hover{
@@ -83,7 +82,7 @@ button{
     transition: 0.3s;
 }
 button:hover{
-    background-color: #00ff73;
+    background-color: #5acaff;
 }
 .done{
     color: rgb(211, 211, 211);

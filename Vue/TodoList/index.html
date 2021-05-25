@@ -29,8 +29,8 @@
         </div>
 
         <ul>
-            <li v-for="(list, index) in lists" v-on:click="beDone(index)" v-bind:class="{done: list.done}">
-              <input type="checkbox" value="index" v-model="list.done" :checked="list.done">
+            <li v-for="(list, index) in lists"  v-bind:class="{done: list.done}">
+              <input type="checkbox" value="index" v-model="list.done" :checked="list.done" v-on:click="beDone(index)">
               <span style="width: 65%; text-align: left;"  > {{ list.name }}</span>
               <div style="width: 35%;">
                 <button @click="editList(index, list.name)">Edit</button>
