@@ -1,0 +1,223 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    color: #a4acc4;
+}
+a{
+    text-decoration: none !important;
+    color: #a4acc4;
+}
+body{
+    background-color: #10121b !important;
+}
+.hidden-bar{
+    display: none;
+    width: 50px;
+    height: 50px;
+    padding: 10px 15px;
+    font-size: 22px;
+    box-sizing: border-box;
+    position: fixed;
+    top: 30px;
+    left: 0;
+    cursor: pointer;
+    transition: 0.3s;
+    z-index: 10;
+    background-color: #141722;
+}
+.header-box{
+    width: 260px;
+    height: 100%;
+    position: fixed;
+    top: 0; left: 0;
+    box-sizing: border-box;
+    background-color: #191d2b;
+    transition: 0.2s;
+}
+.header-image{
+    width: 100%;
+    height: 34%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border-bottom: 1px solid #444955;
+}
+.header-image img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 7px solid #2e344e;
+}
+.nav{
+    height: 55%;
+}
+.nav-item{
+    position: relative;
+}
+.nav-link{
+    letter-spacing: 1.3px;
+    color: #a4acc4;
+    transition: 0.2s;
+}
+.nav-link:hover{
+    color: #a4a4a4 !important;
+}
+.load-menu::before{
+    content: "";
+    width: 0px;
+    height: 100%;
+    background-color: #0f7bff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.load-menu:hover::before{
+    width: 100%;
+}
+
+.footer{
+    height: 11%;
+}
+
+.big-container{
+    width: calc(100% - 260px);
+    height: 100vh !important;
+}
+.big-container .container{
+    margin-bottom: -41px;
+}
+.title{
+    padding-top: 120px !important;
+    letter-spacing: 2px;
+    box-sizing: border-box;
+}
+.title h2{
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.title span{
+    font-size: 4.5rem;
+    margin-top: 0px;
+    padding-top: 0px;
+    position: relative;
+    top: -30px;
+    color: #141722;
+    font-weight: 900;
+}
+.title .progress{
+    width: 100px;
+    height: 5px !important;
+    background-color: #0c3360 !important;
+    position: absolute;
+    top: 50%; left: 0;
+}
+
+/* Skills level */
+.skill{
+    margin: 25px 0;
+}
+.skill .field{
+    font-size: 1.3rem;
+}
+.skill .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+.skill .progress{
+    width: 100px;
+    height: 6.5px !important;
+    border-radius: 0 !important;
+    background-color: #2e344e !important;
+}
+
+/* Resume */
+.resume-title{
+    height: 15vh;
+    display: flex;
+    margin: 20px 0;
+}
+.resume-title .fa{
+    margin: 0 20px 0 0;
+    font-size: 1.7rem;
+    color: white;
+}
+.resume-title h3{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.timeline{
+    border-left: 3px solid #2e344e;
+    font-size: 1.14rem;
+}
+.timeline-box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timeline-box::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -24px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #10121b;
+    border: 3px solid #2e344e;
+}
+.timeline-box .job-discription{
+    position: relative;
+}
+.timeline-box .job-discription::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #2e344e;
+    top: 10px;
+    left: -55px;
+    border-radius: 1px;
+}
+.timeline-box .job-discription h5{
+    font-size: 1.43rem;
+    color: #0f7bff;
+    font-weight: 600;
+}
+.timeline-box .job-discription a{
+    color: white;
+}
+
+@media screen and (max-width: 1200px){
+    .header-box{
+        transform: translateX(-260px);
+        transition: 0.2s;
+    }
+    .big-container{
+        width: 100%;
+    }
+    .hidden-bar{
+        display: block;
+        transition: 0.3s;
+        z-index: 100;
+    }
+}
+@media screen and (max-width: 992px){
+    .title{
+        padding-top: 90px !important;
+    }
+    .title h2{
+        font-size: 2.3rem;
+    }
+    .title span{
+        font-size: 4rem;
+    }
+}

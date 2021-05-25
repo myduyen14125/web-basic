@@ -25,15 +25,16 @@
 
         <div v-else>
           <input type="text" v-model="currentInput"/>
-          <input type="submit" value="Update" v-on:click="updateList"/>
+          <input type="submit" value="update" @click="updateList"/>
         </div>
 
+
         <ul>
-            <li v-for="(list, index) in lists" v-on:click="beDone(index)" v-bind:class="{done: list.done}">
-              <input type="checkbox" value="index" v-model="list.done" :checked="list.done">
-              <span style="width: 65%; text-align: left;"  > {{ list.name }}</span>
+            <li v-for="(list, index) in lists">
+              <input type="checkbox" value="index" v-model="categories">
+              <span style="width: 65%; text-align: left;"> {{ list }}</span>
               <div style="width: 35%;">
-                <button @click="editList(index, list.name)">Edit</button>
+                <button @click="editList(index, listName)">Edit</button>
                 <button @click="deleteList(index)">Delete</button>
               </div>
               
@@ -44,6 +45,6 @@
       </div>
     </div>
     
-    <script src="test.js"></script>
+    <script src="testcu.js"></script>
   </body>
 </html>

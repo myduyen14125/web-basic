@@ -62,7 +62,7 @@ input[type = 'text']{
 }
 input[type = 'submit']{
     font-size: 1.1rem;
-    background-color: #00ff73;
+    background-color: #5acaff;
     width: 20%;
     padding: 10px;
     border-radius: 5px;
@@ -71,6 +71,7 @@ input[type = 'checkbox']{
     width:20px;
     height:20px;
     margin-right: 10px;
+    cursor: pointer;
 }
 button{
     background-color: #151729;
@@ -82,5 +83,10 @@ button{
     transition: 0.3s;
 }
 button:hover{
+    background-color: #00ff73;
+}
+.done{
+    color: rgb(211, 211, 211);
+    text-decoration: line-through;
     background-color: #00ff73;
 }

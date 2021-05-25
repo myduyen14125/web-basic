@@ -3,26 +3,59 @@ var list = new Vue({
     data: {
         selectedIndex: null,
         isEditing: false,
-        list: '',
-        lists: [],
+        currentInput: '',
+        lists: [ ],
     },
     methods: {
-        storeList: function(){
-            this.lists.push(this.list)
-            this.list = ''
+        storeList(){
+            //nếu không tìm thấy item trong list = currentInput -> nó đang sai, thì đẩy currentInput vô lists
+            if(!this.lists.find(item => item.name === this.currentInput))
+            {
+                this.lists.push({
+                    name: this.currentInput,
+                    done: false,
+                    count: 0
+                })
+                this.currentInput = ''
+            }
+            else{
+                alert("Có rồi á á")
+            }
+            
         },
-        editList(index, list){
-            this.list = list
+        beDone(index){
+            if(this.lists[index].count % 2 != 0){
+                this.lists[index].done = true
+            }
+            else{
+                this.lists[index].done = false
+            }
+        },
+        editList(index, listName){
+            this.currentInput = listName
             this.selectedIndex = index
             this.isEditing = true
         },
         updateList(){
-            this.lists.splice(this.selectedIndex, 1, this.list)
-            this.isEditing = false
+            if(!this.lists.find(item => item.name === this.currentInput))
+            {
+                //alert(this.selectedIndex)
+                this.lists[this.selectedIndex]={
+                    name: this.currentInput,
+                    done: false
+                }
+                this.isEditing = false
+            }
+            else{
+                alert("Có rồi á á")
+            }
+            
         },
         deleteList(index){
             this.lists.splice(index, 1)
-        }
+        },
+        
+
     },
   });
   
