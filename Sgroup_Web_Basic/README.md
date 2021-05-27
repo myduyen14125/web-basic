@@ -1,1 +1,1 @@
-<h3> Frontend Web Training !</h3>
+<h3> S-Group Assignments about Web Basics.</h3>
