@@ -188,6 +188,7 @@ body{
     height: 150px;
     padding: 30px;
     display: flex;
+    margin: 25px 0;
 }
 .contact .info-block .fa{
     width: 70px;
