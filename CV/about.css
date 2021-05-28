@@ -187,6 +187,22 @@ body{
     height: 50px;
     color: white;
     background-color:#197fff;
+    border: 0;
+    position: relative;
+    outline: none;
+}
+.about .content button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.5px;
+    width: 0%;
+    background-color: white;
+    transition: 0.3s;
+}
+.about .content button:hover::before{
+    width: 100%;
 }
 /* Serives */
 .service-box{
