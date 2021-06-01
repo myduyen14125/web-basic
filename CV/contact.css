@@ -81,25 +81,25 @@ body{
     height: 11%;
 }
 
-.big-container{
+.contact-page{
     width: calc(100% - 260px);
     height: 100vh !important;
 }
-.big-container .container{
+.contact-page .container{
     margin-bottom: -41px;
 }
-.title{
+.contact-page .title{
     padding-top: 120px !important;
     letter-spacing: 2px;
     box-sizing: border-box;
 }
-.title h2{
+.contact-page .title h2{
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.title span{
+.contact-page .title span{
     font-size: 4.5rem;
     margin-top: 0px;
     padding-top: 0px;
@@ -108,7 +108,7 @@ body{
     color: #141722;
     font-weight: 900;
 }
-.title .progress{
+.contact-page .title .progress{
     width: 100px;
     height: 5px !important;
     background-color: #0c3360 !important;
@@ -117,7 +117,7 @@ body{
 }
 
 /* #343A40: mau cua bg-dark trong Bootstrap */
-.contact .input-box{
+.contact-page .contact .input-box{
     position: relative;
     border: 1px solid #343a40; 
     height: 50px;
@@ -128,7 +128,7 @@ body{
     margin: 34px 0;
     font-size: 1rem;
 }
-.contact .input-box label{
+.contact-page .contact .input-box label{
     position: absolute;
     z-index: 10;
     display: inline-block;
@@ -137,27 +137,27 @@ body{
     top: -12px;
     left: 15px;
 }
-.contact .input-box input{
+.contact-page .contact .input-box input{
     background: none;
     border: none;
     outline: none;
     width: 100%;
     height: 100%;
 }
-.contact .message{
+.contact-page .contact .message{
     height: 200px;
     display: flex;
     padding: 10px 15px;
     align-items: flex-start;
 }
-.contact .message textarea{
+.contact-page .contact .message textarea{
     background: none;
     width: 100%;
     height: 100%;
     outline: none;
     border: none;
 }
-.contact button{
+.contact-page .contact button{
     margin: 0;
     width: 156px;
     letter-spacing: 0.1rem;
@@ -168,7 +168,7 @@ body{
     position: relative;
     outline: none;
 }
-.contact button::before{
+.contact-page .contact button::before{
     content: '';
     position: absolute;
     bottom: 0;
@@ -178,11 +178,11 @@ body{
     background-color: white;
     transition: 0.3s;
 }
-.contact button:hover::before{
+.contact-page .contact button:hover::before{
     width: 100%;
 }
 
-.contact .info-block{
+.contact-page .contact .info-block{
     background-color: #191d2b;
     width: 100%;
     height: 150px;
@@ -190,7 +190,7 @@ body{
     display: flex;
     margin: 25px 0;
 }
-.contact .info-block .fa{
+.contact-page .contact .info-block .fa{
     width: 70px;
     height: 70px;
     border: 1px solid #343a40;
@@ -200,7 +200,7 @@ body{
     align-items: center;
     font-size: 2rem;
 }
-.contact .info-block h6{
+.contact-page .contact .info-block h6{
     font-size: 1.15rem;
 }
 
@@ -210,7 +210,7 @@ body{
         transform: translateX(-260px);
         transition: 0.2s;
     }
-    .big-container{
+    .contact-page{
         width: 100%;
     }
     .hidden-bar{
@@ -220,13 +220,13 @@ body{
     }
 }
 @media screen and (max-width: 992px){
-    .title{
+    .contact-page .title{
         padding-top: 90px !important;
     }
-    .title h2{
+    .contact-page .title h2{
         font-size: 2.3rem;
     }
-    .title span{
+    .contact-page .title span{
         font-size: 4rem;
     }
 }

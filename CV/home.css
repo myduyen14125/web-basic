@@ -57,6 +57,7 @@ body{
 .nav-link{
     letter-spacing: 1.3px;
     color: #a4acc4;
+    cursor: pointer;
     transition: 0.2s;
 }
 .nav-link:hover{
@@ -82,20 +83,22 @@ body{
 }
 
 
+
+
+
+
 .home{
-    width: 100%;
-    height: 100vh;
-    vertical-align: middle;
+    width: calc(100% - 260px);
+    height: 100vh !important;
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
 }
 .home .content{
-    width: calc(100% - 260px);
-    transition: 0.2s;
+    width: 100%;
+    height: 250px;
 }
 .home .content h1{
     text-align: center;
@@ -226,7 +229,7 @@ body{
         transform: translateX(-260px);
         transition: 0.2s;
     }
-    .home .content{
+    .home {
         width: 100%;
     }
     .hidden-bar{

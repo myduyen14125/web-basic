@@ -86,18 +86,18 @@ body{
     height: 100vh !important;
 }
 
-.title{
+.blog .title{
     padding-top: 120px !important;
     letter-spacing: 2px;
     box-sizing: border-box;
 }
-.title h2{
+.blog .title h2{
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.title span{
+.blog .title span{
     font-size: 4.5rem;
     margin-top: 0px;
     padding-top: 0px;
@@ -106,7 +106,7 @@ body{
     color: #141722;
     font-weight: 900;
 }
-.progress{
+.blog .progress{
     width: 100px;
     height: 5px !important;
     background-color: #0c3360 !important;
@@ -114,24 +114,24 @@ body{
     top: 50%; left: 0;
 }
 
-.card{
+.blog .card{
     margin: auto;
     background-color: #191d2b !important;
     cursor: pointer;
 }
-.card .img{
+.blog .card .img{
     overflow: hidden;
     transition: 0.3s;
 }
-.card img{
+.blog .card img{
     transition: 0.3s;
 }
-.card:hover img{
+.blog .card:hover img{
     transform: scale(1.15);
     object-fit: cover !important;
     transition: 0.3s;
 }
-.card .date{
+.blog .card .date{
     width: 80px;
     height: 80px;
     position: absolute;
@@ -139,15 +139,15 @@ body{
     left: 35px;
     font-size: 1.3rem;
 }
-.card .date b{
+.blog .card .date b{
     font-size: 2.3rem;
     line-height: 30%;
 }
 
-.page-link{
+.blog .page-link{
     font-size: 1.2rem;
 }
-.page-link:hover{
+.blog .page-link:hover{
     background-color: #ddd !important;
     transition: 0.2s;
 }
@@ -161,13 +161,13 @@ body{
     }
 }
 @media screen and (max-width: 992px){
-    .title{
+    .blog .title{
         padding-top: 90px !important;
     }
-    .title h2{
+    .blog .title h2{
         font-size: 2.3rem;
     }
-    .title span{
+    .blog .title span{
         font-size: 4rem;
     }
 }

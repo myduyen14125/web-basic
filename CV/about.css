@@ -88,18 +88,18 @@ body{
 .about .container{
     margin-bottom: -41px;
 }
-.title{
+.about .title{
     padding-top: 120px !important;
     letter-spacing: 2px;
     box-sizing: border-box;
 }
-.title h2{
+.about .title h2{
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.title span{
+.about .title span{
     font-size: 4.5rem;
     margin-top: 0px;
     padding-top: 0px;
@@ -108,19 +108,19 @@ body{
     color: #141722;
     font-weight: 900;
 }
-.progress{
+.about .progress{
     width: 100px;
     height: 5px !important;
     background-color: #0c3360 !important;
     position: absolute;
     top: 50%; left: 0;
 }
-.container .row .img{
+.about .container .row .img{
     width: fit-content;
     block-size: fit-content;
     position: relative;
 }
-.container .row .img::before{
+.about .container .row .img::before{
     content: "";
     position: absolute;
     top: 0;
@@ -129,7 +129,7 @@ body{
     height: 62%;
     opacity: 0.7;
 }
-.container .row .img::after{
+.about .container .row .img::after{
     content: "";
     position: absolute;
     bottom: 0;
@@ -139,7 +139,7 @@ body{
     height: 62%;
     opacity: 0.7;
 }
-.container .row .img .fa{
+.about .container .row .img .fa{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -148,7 +148,7 @@ body{
     opacity: 0;
     transition: 0.2s;
 }
-.container .row .img:hover .fa{
+.about .container .row .img:hover .fa{
     top: 40%;
     left: 42%;
     font-size: 7rem;
@@ -205,7 +205,7 @@ body{
     width: 100%;
 }
 /* Serives */
-.service-box{
+.about .service-box{
     background-color: #191d2b;
     border-top: 5px #343A40 solid;
     border-right: 1px solid #343A40;
@@ -215,33 +215,33 @@ body{
     line-height: 1.7;
     font-size: 1.15rem;
 }
-.service-box:hover{
+.about .service-box:hover{
     border-top: #0f7bff 5px solid;
     transition: 0.3s;
 }
-.service-box .symbol{
+.about .service-box .symbol{
     font-size: 40px;
 }
-.service-box h3{
+.about .service-box h3{
     font-size: 1.5rem;
 }
-.service-box .symbol .fa{
+.about .service-box .symbol .fa{
     color: #197fff;
 }
-.service-box .space{
+.about .service-box .space{
     height: 2px;
     width: 50px;
     background-color: #343A40;
 }
 
-.review-box{
+.about .review-box{
     padding: 35px 20px;
     background-color: #191d2b;
     font-size: 1.2rem;
     border-left: #343A40 5px solid;
     position: relative;
 }
-.review-box::after{
+.about .review-box::after{
     content: "";
     position: absolute;
     z-index: -1;
@@ -252,10 +252,10 @@ body{
     transform: rotate(45deg);
     transform: skewY(-45deg);
 }
-.author{
+.about .author{
     margin: 50px 0 100px 0;
 }
-.author .name{
+.about .author .name{
     color: white;
     font-size: 1.35rem;
 }
@@ -274,13 +274,13 @@ body{
     }
 }
 @media screen and (max-width: 992px){
-    .title{
+    .about .title{
         padding-top: 90px !important;
     }
-    .title h2{
+    .about .title h2{
         font-size: 2.3rem;
     }
-    .title span{
+    .about .title span{
         font-size: 4rem;
     }
 }

@@ -81,25 +81,25 @@ body{
     height: 11%;
 }
 
-.big-container{
+.resume-page{
     width: calc(100% - 260px);
     height: 100vh !important;
 }
-.big-container .container{
+.resume-page .container{
     margin-bottom: -41px;
 }
-.title{
+.resume-page .title{
     padding-top: 120px !important;
     letter-spacing: 2px;
     box-sizing: border-box;
 }
-.title h2{
+.resume-page .title h2{
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.title span{
+.resume-page .title span{
     font-size: 4.5rem;
     margin-top: 0px;
     padding-top: 0px;
@@ -108,7 +108,7 @@ body{
     color: #141722;
     font-weight: 900;
 }
-.title .progress{
+.resume-page .title .progress{
     width: 100px;
     height: 5px !important;
     background-color: #0c3360 !important;
@@ -117,20 +117,20 @@ body{
 }
 
 /* Skills level */
-.skill{
+.resume-page .skill{
     margin: 25px 0;
 }
-.skill .field{
+.resume-page .skill .field{
     font-size: 1.3rem;
 }
-.skill .content{
-    display: flex;
+.resume-page .skill .content{
+    display: flex !important;
     align-items: center;
     justify-content: space-between;
     font-size: 1.1rem;
 }
 
-.skill .progress{
+.resume-page .skill .progress{
     width: 100px;
     height: 6.5px !important;
     border-radius: 0 !important;
@@ -138,32 +138,32 @@ body{
 }
 
 /* Resume */
-.resume-title{
+.resume-page .resume-title{
     height: 15vh;
     display: flex;
-    margin: 20px 0;
+    margin: 20px 45px;
 }
-.resume-title .fa{
+.resume-page .resume-title .fa{
     margin: 0 20px 0 0;
     font-size: 1.7rem;
     color: white;
 }
-.resume-title h3{
+.resume-page .resume-title h3{
     color: white;
     font-size: 1.7rem;
     font-weight: 700;
 }
-.timeline{
+.resume-page .timeline{
     border-left: 3px solid #2e344e;
     font-size: 1.14rem;
 }
-.timeline-box{
+.resume-page .timeline-box{
     display: flex;
     justify-content: space-between;
     position: relative;
 }
 
-.timeline-box::before{
+.resume-page .timeline-box::before{
     content: '';
     position: absolute;
     top: 5px;
@@ -174,10 +174,10 @@ body{
     background-color: #10121b;
     border: 3px solid #2e344e;
 }
-.timeline-box .job-discription{
+.resume-page .timeline-box .job-discription{
     position: relative;
 }
-.timeline-box .job-discription::before{
+.resume-page .timeline-box .job-discription::before{
     content: '';
     position: absolute;
     width: 30px;
@@ -187,12 +187,12 @@ body{
     left: -55px;
     border-radius: 1px;
 }
-.timeline-box .job-discription h5{
+.resume-page .timeline-box .job-discription h5{
     font-size: 1.43rem;
     color: #0f7bff;
     font-weight: 600;
 }
-.timeline-box .job-discription a{
+.resume-page .timeline-box .job-discription a{
     color: white;
 }
 
@@ -201,7 +201,7 @@ body{
         transform: translateX(-260px);
         transition: 0.2s;
     }
-    .big-container{
+    .resume-page{
         width: 100%;
     }
     .hidden-bar{
@@ -211,13 +211,13 @@ body{
     }
 }
 @media screen and (max-width: 992px){
-    .title{
+    .resume-page .title{
         padding-top: 90px !important;
     }
-    .title h2{
+    .resume-page .title h2{
         font-size: 2.3rem;
     }
-    .title span{
+    .resume-page .title span{
         font-size: 4rem;
     }
 }

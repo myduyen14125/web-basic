@@ -88,18 +88,18 @@ body{
 .portfolio .container{
     margin-bottom: -41px;
 }
-.title{
+.portfolio .title{
     padding-top: 120px !important;
     letter-spacing: 2px;
     box-sizing: border-box;
 }
-.title h2{
+.portfolio .title h2{
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.title span{
+.portfolio .title span{
     font-size: 4.5rem;
     margin-top: 0px;
     padding-top: 0px;
@@ -108,7 +108,7 @@ body{
     color: #141722;
     font-weight: 900;
 }
-.progress{
+.portfolio .progress{
     width: 100px;
     height: 5px !important;
     background-color: #0c3360 !important;
@@ -117,10 +117,10 @@ body{
 }
 
 /* Each photo-box */
-.photo-box{
+.portfolio .photo-box{
     position: relative;
 }
-.photo-box::before{
+.portfolio .photo-box::before{
     content:'';
     position: absolute;
     width: 0px;
@@ -131,10 +131,10 @@ body{
     opacity: 0.8;
     transition: 0.5s;
 }
-.photo-box:hover::before{
+.portfolio .photo-box:hover::before{
     width: 90%;
 }
-.photo-box .fa{
+.portfolio .photo-box .fa{
     width: 45px;
     height: 45px;
     background-color: #AFB6Cb;
@@ -146,7 +146,7 @@ body{
     font-size: 1.2rem;
     cursor: pointer;
 }
-.photo-box .fa-search-plus{
+.portfolio .photo-box .fa-search-plus{
     position: absolute;
     bottom: 25%;
     left: 35%;
@@ -154,7 +154,7 @@ body{
     transition: 0.6s;
     transition-delay: 0.1s;
 }
-.photo-box .fa-link{
+.portfolio .photo-box .fa-link{
     position: absolute;
     bottom: 25%;
     right: 35%;
@@ -162,22 +162,22 @@ body{
     transition: 0.6s;
     transition-delay: 0.1s;
 }
-.photo-box:hover .fa-search-plus, .photo-box:hover .fa-link{
+.portfolio .photo-box:hover .fa-search-plus, .photo-box:hover .fa-link{
     opacity: 1;
     bottom: 43%;
 }
-.photo-box .fa:hover{
+.portfolio .photo-box .fa:hover{
     background-color: #0f7bff;
 }
 
-.product{
+.portfolio .product{
     margin: 15px 0 30px;
 }
-.product .name{
+.portfolio .product .name{
     font-size: 1.5rem;
     font-weight: 700;
 }
-.product .discription{
+.portfolio .product .discription{
     font-size: 1.2rem;
 }
 
@@ -207,13 +207,13 @@ body{
     }
 }
 @media screen and (max-width: 992px){
-    .title{
+    .portfolio .title{
         padding-top: 90px !important;
     }
-    .title h2{
+    .portfolio .title h2{
         font-size: 2.3rem;
     }
-    .title span{
+    .portfolio .title span{
         font-size: 4rem;
     }
 }
