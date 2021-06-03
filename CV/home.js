@@ -48,7 +48,9 @@ let portfolioPage = document.getElementById("portfolio-page");
 let blogPage = document.getElementById("blog-page");
 let contactPage = document.getElementById("contact-page");
 
+// Default of the screen when open CV
 homeButton.style.backgroundColor = "#0f7bff";
+homePage.style.display = "block";
 
 homeButton.addEventListener("click", function(){
     homeButton.style.backgroundColor = "#0f7bff";
