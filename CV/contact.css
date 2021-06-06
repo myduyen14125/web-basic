@@ -82,8 +82,9 @@ body{
 }
 
 .contact-page{
+    position: relative;
     width: calc(100% - 260px);
-    height: 100vh !important;
+    transition: 0.3s;
 }
 .contact-page .container{
     margin-bottom: -41px;
@@ -181,6 +182,16 @@ body{
 .contact-page .contact button:hover::before{
     width: 100%;
 }
+.contact-page .contact .invalid-model{
+    width: 100%;
+    height: 55px;
+    margin: 35px 0;
+    padding: 0 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
 
 .contact-page .contact .info-block{
     background-color: #191d2b;
@@ -203,6 +214,7 @@ body{
 .contact-page .contact .info-block h6{
     font-size: 1.15rem;
 }
+
 
 
 @media screen and (max-width: 1200px){

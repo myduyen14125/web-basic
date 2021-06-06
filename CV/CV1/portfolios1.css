@@ -83,7 +83,7 @@ body{
 
 .portfolio{
     position: relative;
-    width: calc(100% - 260px);
+    width: 100%;
     transition: 0.3s;
 }
 .portfolio .container{
@@ -171,6 +171,7 @@ body{
     background-color: #0f7bff;
 }
 
+
 .portfolio .product{
     margin: 15px 0 30px;
 }
@@ -193,39 +194,24 @@ body{
     transition: 0.2s;
 }
 
-
-.fullscreen-photo{
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0; left: 0;
-    background-color: #1c1c1d;
-    opacity: 1;
-    z-index: 1;
+/* Model photo */
+.portfolio .modal-header{
+    border: 0;
+    margin: 0;
 }
-.fullscreen-photo img{
-    width: 936.174px;
-    height: 582.3px;
-    opacity: 1;
-    z-index: 2;
+.portfolio .modal-dialog{
+    max-width: 750px;
+}
+.portfolio .modal-content{
+    background-color: #343A40;
+    position: relative;
+    left: 0;
+    padding: 0;
+}
+button{
+    outline: none !important;
 }
 
-
-
-@media screen and (max-width: 1200px){
-    .header-box{
-        transform: translateX(-260px);
-        transition: 0.2s;
-    }
-    .portfolio{
-        width: 100%;
-    }
-    .hidden-bar{
-        display: block;
-        transition: 0.3s;
-        z-index: 100;
-    }
-}
 @media screen and (max-width: 992px){
     .portfolio .title{
         padding-top: 90px !important;

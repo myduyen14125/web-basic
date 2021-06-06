@@ -82,8 +82,9 @@ body{
 }
 
 .resume-page{
+    position: relative;
     width: calc(100% - 260px);
-    height: 100vh !important;
+    transition: 0.3s;
 }
 .resume-page .container{
     margin-bottom: -41px;

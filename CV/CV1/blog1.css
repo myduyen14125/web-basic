@@ -82,7 +82,7 @@ body{
 }
 
 .blog{
-    width: calc(100% - 260px);
+    width: 100%;
     transition: 0.3s;
 }
 
@@ -151,15 +151,7 @@ body{
     background-color: #ddd !important;
     transition: 0.2s;
 }
-@media screen and (max-width: 1200px){
-    .header-box{
-        transform: translateX(-260px);
-        transition: 0.2s;
-    }
-    .blog{
-        width: 100%;
-    }
-}
+
 @media screen and (max-width: 992px){
     .blog .title{
         padding-top: 90px !important;

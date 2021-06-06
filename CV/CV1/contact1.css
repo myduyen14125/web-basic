@@ -81,26 +81,26 @@ body{
     height: 11%;
 }
 
-.portfolio{
+.contact-page{
     position: relative;
-    width: calc(100% - 260px);
+    width: 100%;
     transition: 0.3s;
 }
-.portfolio .container{
+.contact-page .container{
     margin-bottom: -41px;
 }
-.portfolio .title{
+.contact-page .title{
     padding-top: 120px !important;
     letter-spacing: 2px;
     box-sizing: border-box;
 }
-.portfolio .title h2{
+.contact-page .title h2{
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.portfolio .title span{
+.contact-page .title span{
     font-size: 4.5rem;
     margin-top: 0px;
     padding-top: 0px;
@@ -109,7 +109,7 @@ body{
     color: #141722;
     font-weight: 900;
 }
-.portfolio .progress{
+.contact-page .title .progress{
     width: 100px;
     height: 5px !important;
     background-color: #0c3360 !important;
@@ -117,123 +117,114 @@ body{
     top: 50%; left: 0;
 }
 
-/* Each photo-box */
-.portfolio .photo-box{
+/* #343A40: mau cua bg-dark trong Bootstrap */
+.contact-page .contact .input-box{
     position: relative;
+    border: 1px solid #343a40; 
+    height: 50px;
+    font-size: 1rem;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    margin: 34px 0;
+    font-size: 1rem;
 }
-.portfolio .photo-box::before{
-    content:'';
+.contact-page .contact .input-box label{
     position: absolute;
-    width: 0px;
-    height: 86%;
-    top: 7%;
-    left: 5%;
-    background-color: white;
-    opacity: 0.8;
-    transition: 0.5s;
+    z-index: 10;
+    display: inline-block;
+    background-color: #10121b;
+    padding: 0 8px;
+    top: -12px;
+    left: 15px;
 }
-.portfolio .photo-box:hover::before{
-    width: 90%;
+.contact-page .contact .input-box input{
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
 }
-.portfolio .photo-box .fa{
-    width: 45px;
-    height: 45px;
-    background-color: #AFB6Cb;
+.contact-page .contact .message{
+    height: 200px;
+    display: flex;
+    padding: 10px 15px;
+    align-items: flex-start;
+}
+.contact-page .contact .message textarea{
+    background: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+}
+.contact-page .contact button{
+    margin: 0;
+    width: 156px;
+    letter-spacing: 0.1rem;
+    height: 50px;
     color: white;
-    border-radius: 100%;
+    background-color:#197fff;
+    border: 0;
+    position: relative;
+    outline: none;
+}
+.contact-page .contact button::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2.5px;
+    width: 0%;
+    background-color: white;
+    transition: 0.3s;
+}
+.contact-page .contact button:hover::before{
+    width: 100%;
+}
+.contact-page .contact .invalid-model{
+    width: 100%;
+    height: 55px;
+    margin: 35px 0;
+    padding: 0 15px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+
+.contact-page .contact .info-block{
+    background-color: #191d2b;
+    width: 100%;
+    height: 150px;
+    padding: 30px;
+    display: flex;
+    margin: 25px 0;
+}
+.contact-page .contact .info-block .fa{
+    width: 70px;
+    height: 70px;
+    border: 1px solid #343a40;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.2rem;
-    cursor: pointer;
+    font-size: 2rem;
 }
-.portfolio .photo-box .fa-search-plus{
-    position: absolute;
-    bottom: 25%;
-    left: 35%;
-    opacity: 0;
-    transition: 0.6s;
-    transition-delay: 0.1s;
-}
-.portfolio .photo-box .fa-link{
-    position: absolute;
-    bottom: 25%;
-    right: 35%;
-    opacity: 0;
-    transition: 0.6s;
-    transition-delay: 0.1s;
-}
-.portfolio .photo-box:hover .fa-search-plus, .photo-box:hover .fa-link{
-    opacity: 1;
-    bottom: 43%;
-}
-.portfolio .photo-box .fa:hover{
-    background-color: #0f7bff;
-}
-
-.portfolio .product{
-    margin: 15px 0 30px;
-}
-.portfolio .product .name{
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-.portfolio .product .discription{
-    font-size: 1.2rem;
-}
-
-.container .pagination{
-    padding-bottom: 120px;
-}
-.pagination .page-link{
-    font-size: 1.2rem;
-}
-.pagination .page-link:hover{
-    background-color: #ddd !important;
-    transition: 0.2s;
-}
-
-
-.fullscreen-photo{
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0; left: 0;
-    background-color: #1c1c1d;
-    opacity: 1;
-    z-index: 1;
-}
-.fullscreen-photo img{
-    width: 936.174px;
-    height: 582.3px;
-    opacity: 1;
-    z-index: 2;
+.contact-page .contact .info-block h6{
+    font-size: 1.15rem;
 }
 
 
 
-@media screen and (max-width: 1200px){
-    .header-box{
-        transform: translateX(-260px);
-        transition: 0.2s;
-    }
-    .portfolio{
-        width: 100%;
-    }
-    .hidden-bar{
-        display: block;
-        transition: 0.3s;
-        z-index: 100;
-    }
-}
 @media screen and (max-width: 992px){
-    .portfolio .title{
+    .contact-page .title{
         padding-top: 90px !important;
     }
-    .portfolio .title h2{
+    .contact-page .title h2{
         font-size: 2.3rem;
     }
-    .portfolio .title span{
+    .contact-page .title span{
         font-size: 4rem;
     }
 }

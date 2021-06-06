@@ -83,7 +83,7 @@ body{
 
 .about{
     position: relative;
-    width: calc(100% - 260px);
+    width: 100%;
     transition: 0.3s;
 }
 .about .container{
@@ -157,6 +157,20 @@ body{
     transition: 0.2s;
     opacity: 0.65;
 }
+
+/* Modal photo */
+.about .modal-header{
+    border: 0;
+}
+.about .modal-dialog{
+    max-width: 700px;
+}
+.about .modal-content{
+    background-color: #343A40;
+    position: relative;
+    left: 0;
+}
+
 .about .content{
     font-weight: 100;
     line-height: 1.8;
@@ -261,20 +275,7 @@ body{
     color: white;
     font-size: 1.35rem;
 }
-@media screen and (max-width: 1200px){
-    .header-box{
-        transform: translateX(-260px);
-        transition: 0.2s;
-    }
-    .about{
-        width: 100%;
-    }
-    .hidden-bar{
-        display: block;
-        transition: 0.3s;
-        z-index: 100;
-    }
-}
+
 @media screen and (max-width: 992px){
     .about .title{
         padding-top: 90px !important;

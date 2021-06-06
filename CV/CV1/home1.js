@@ -60,12 +60,6 @@ homeButton.addEventListener("click", function(){
     blogButton.style.backgroundColor = "#191d2b";
     contactButton.style.backgroundColor = "#191d2b";
 
-    homePage.style.display = "block";
-    aboutPage.style.display = "none";
-    resumePage.style.display = "none";
-    portfolioPage.style.display = "none";
-    blogPage.style.display = "none";
-    contactPage.style.display = "none";
 
 })
 aboutButton.addEventListener("click", function(){
@@ -76,12 +70,6 @@ aboutButton.addEventListener("click", function(){
     blogButton.style.backgroundColor = "#191d2b";
     contactButton.style.backgroundColor = "#191d2b";
 
-    homePage.style.display = "none";
-    aboutPage.style.display = "block";
-    resumePage.style.display = "none";
-    portfolioPage.style.display = "none";
-    blogPage.style.display = "none";
-    contactPage.style.display = "none";
 })
 resumeButton.addEventListener("click", function(){
     homeButton.style.backgroundColor = "#191d2b";
@@ -91,12 +79,6 @@ resumeButton.addEventListener("click", function(){
     blogButton.style.backgroundColor = "#191d2b";
     contactButton.style.backgroundColor = "#191d2b";
 
-    homePage.style.display = "none";
-    aboutPage.style.display = "none";
-    resumePage.style.display = "block";
-    portfolioPage.style.display = "none";
-    blogPage.style.display = "none";
-    contactPage.style.display = "none";
 })
 portfolioButton.addEventListener("click", function(){
     homeButton.style.backgroundColor = "#191d2b";
@@ -106,12 +88,6 @@ portfolioButton.addEventListener("click", function(){
     blogButton.style.backgroundColor = "#191d2b";
     contactButton.style.backgroundColor = "#191d2b";
 
-    homePage.style.display = "none";
-    aboutPage.style.display = "none";
-    resumePage.style.display = "none";
-    portfolioPage.style.display = "block";
-    blogPage.style.display = "none";
-    contactPage.style.display = "none";
 })
 blogButton.addEventListener("click", function(){
     homeButton.style.backgroundColor = "#191d2b";
@@ -121,12 +97,6 @@ blogButton.addEventListener("click", function(){
     blogButton.style.backgroundColor = "#0f7bff";
     contactButton.style.backgroundColor = "#191d2b";
 
-    homePage.style.display = "none";
-    aboutPage.style.display = "none";
-    resumePage.style.display = "none";
-    portfolioPage.style.display = "none";
-    blogPage.style.display = "block";
-    contactPage.style.display = "none";
 })
 contactButton.addEventListener("click", function(){
     homeButton.style.backgroundColor = "#191d2b";
@@ -136,12 +106,6 @@ contactButton.addEventListener("click", function(){
     blogButton.style.backgroundColor = "#191d2b";
     contactButton.style.backgroundColor = "#0f7bff";
 
-    homePage.style.display = "none";
-    aboutPage.style.display = "none";
-    resumePage.style.display = "none";
-    portfolioPage.style.display = "none";
-    blogPage.style.display = "none";
-    contactPage.style.display = "block";
 })
 
 // Invalid input contact
@@ -189,13 +153,13 @@ function invalidInput(){
     }
 }
 
-//Zoom photo 
-let zoomPhoto = document.getElementsByClassName("fa-search-plus");
+//Zoom photo -> change: zoom photo just be a model 
+// let zoomPhoto = document.getElementsByClassName("fa-search-plus");
 
-for(let i = 0; i < zoomPhoto.length; i++){
-    // let id = Number(zoomPhoto[i].getAttribute("id"));
-    // let img = document.getElementById("photo" + id);
-    zoomPhoto[i].addEventListener("click", function(){
-        alert("heheh helo");
-    })
-}
+// for(let i = 0; i < zoomPhoto.length; i++){
+//     // let id = Number(zoomPhoto[i].getAttribute("id"));
+//     // let img = document.getElementById("photo" + id);
+//     zoomPhoto[i].addEventListener("click", function(){
+//         alert("heheh helo");
+//     })
+// }

@@ -7,12 +7,12 @@
     <title>My CV</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <!-- CSS -->
-    <link rel="stylesheet" href="home.css" />
-    <link rel="stylesheet" href="about.css" /> 
-    <link rel="stylesheet" href="resume.css" />
-    <link rel="stylesheet" href="portfolios.css" />
-    <link rel="stylesheet" href="blog.css" />
-    <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="home1.css" />
+    <link rel="stylesheet" href="about1.css" /> 
+    <link rel="stylesheet" href="resume1.css" />
+    <link rel="stylesheet" href="portfolios1.css" />
+    <link rel="stylesheet" href="blog1.css" />
+    <link rel="stylesheet" href="contact1.css" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -43,22 +43,22 @@
 
       <ul class=" nav flex-column justify-content-center text-center text-uppercase">
         <li class="nav-item">
-          <span id="home-button" class="nav-link load-menu" aria-current="page" href="">home</span>
+          <a id="home-button" class="nav-link load-menu" aria-current="page" href="#home-page">home</a>
         </li>
         <li class="nav-item">
-          <span id="about-button" class="nav-link load-menu" href="">about</span>
+          <a id="about-button" class="nav-link load-menu" href="#about-page">about</a>
         </li>
         <li class="nav-item">
-          <span id="resume-button" class="nav-link load-menu" href="">resume</span>
+          <a id="resume-button" class="nav-link load-menu" href="#resume-page">resume</a>
         </li>
         <li class="nav-item">
-          <span id="portfolio-button" class="nav-link load-menu" href="">portfolios</span>
+          <a id="portfolio-button" class="nav-link load-menu" href="#portfolio-page">portfolios</a>
         </li>
         <li class="nav-item">
-          <span id="blog-button" class="nav-link load-menu" href="">blogs</span>
+          <a id="blog-button" class="nav-link load-menu" href="#blog-page">blogs</a>
         </li>
         <li class="nav-item">
-          <span id="contact-button" class="nav-link load-menu" href="">contact</span>
+          <a id="contact-button" class="nav-link load-menu" href="#contact-page">contact</a>
         </li>
       </ul>
       <div class=" footer d-flex justify-content-center align-items-center border-top border-2 border-dark">
@@ -75,10 +75,9 @@
 
 
 
-
-
-    <!-- First page: home -->
-    <div id="home-page" class="home" style="display: none;">
+    <div class="big-page">
+      <!-- First page: home -->
+    <div id="home-page" class="home" >
       <div class="snow">❅</div>
       <div class="snow">❆</div>
       <div class="snow">❅</div>
@@ -122,7 +121,7 @@
 
 
     <!-- Second page: about  -->
-    <div id="about-page" class="about" style="display: none;">
+    <div id="about-page" class="about" >
       <!-- About title -->
       <div class="container title">
         <h2 class="text-white">ABOUT ME</h2>
@@ -138,8 +137,26 @@
         <div class="row">
           <div class="col-md-12 col-lg-6 p-3">
             <div class="img">
-              <img src="about-image.jpg" class="card-img rounded-0" alt="..." />
-              <div id="photo0" class="fa fa-search-plus"></div>
+              <img src="about-image.jpg" class="card-img rounded-0" alt="About me image"/>
+              <div class="fa fa-search-plus" data-toggle="modal" data-target="#photoModal"></div>
+              <!-- Modal photo -->
+              <div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h4 class="text-center text-white" style="width: 100%;">Hehe, it's me here!</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <img class="card-img" src="about-image.jpg" alt="">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
             </div>
           </div>
           <div class="col-md-12 col-lg-6 p-3">
@@ -266,7 +283,7 @@
 
 
     <!-- Resume page -->
-    <div id="resume-page" class="resume-page" style="display: none;">
+    <div id="resume-page" class="resume-page" >
 
       <!-- Big title -->
       <div class="container title ">
@@ -451,7 +468,7 @@
 
       <!-- Portfolios page -->
 
-      <div id="portfolio-page" class="portfolio" style="display: none;">
+      <div id="portfolio-page" class="portfolio" >
      
         <!-- Big title -->
         <div class="container title">
@@ -468,9 +485,25 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-1.jpg" alt="" class="card-img">
-                  <div id="photo1" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus" data-toggle="modal" data-target="#photo1"></div>
                   <div class="fa fa-link"></div>
-                  <div class="fullscreen-photo" style="display: flex;"><img src="Portfolios/portfolio-image-1-lg.jpg" alt=""></div>
+                  <!-- Modal photo -->
+                  <div class="modal fade" id="photo1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="text-center text-white" style="width: 100%;">T-shirt Mockup</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img class="card-img" src="Portfolios/portfolio-image-1-lg.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Model photo -->
               </div>
               <div class="product">
                 <a href="#" class="name text-white">Tea & Coffee Mug</a><br>
@@ -480,8 +513,25 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-2.jpg" alt="" class="card-img">
-                  <div id="photo2" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus" data-toggle="modal" data-target="#photo2"></div>
                   <div class="fa fa-link"></div>
+                  <!-- Modal photo -->
+                  <div class="modal fade" id="photo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="text-center text-white" style="width: 100%;">T-shirt Mockup</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img class="card-img" src="Portfolios/portfolio-image-3-lg.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Model photo -->
               </div>
               <div class="product">
                 <a href="#" class="name text-white">T-shirt Mockup</a><br>
@@ -491,8 +541,25 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-3.jpg" alt="" class="card-img">
-                  <div id="photo3" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus" data-toggle="modal" data-target="#photo2"></div>
                   <div class="fa fa-link"></div>
+                  <!-- Modal photo -->
+                  <div class="modal fade" id="photo2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h4 class="text-center text-white" style="width: 100%;">T-shirt Mockup</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                          <img class="card-img" src="Portfolios/portfolio-image-3-lg.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Model photo -->
               </div>
               <div class="product">
                 <a href="#" class="name text-white">Pen Holder</a><br>
@@ -502,7 +569,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-4.jpg" alt="" class="card-img">
-                  <div id="photo4" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus"></div>
                   <div class="fa fa-link"></div>
               </div>
               <div class="product">
@@ -513,7 +580,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-5.jpg" alt="" class="card-img">
-                  <div id="photo5" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus"></div>
                   <div class="fa fa-link"></div>
               </div>
               <div class="product">
@@ -524,7 +591,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-6.jpg" alt="" class="card-img">
-                  <div id="photo6" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus"></div>
                   <div class="fa fa-link"></div>
               </div>
               <div class="product">
@@ -535,7 +602,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-7.jpg" alt="" class="card-img">
-                  <div id="photo7" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus"></div>
                   <div class="fa fa-link"></div>
               </div>
               <div class="product">
@@ -546,7 +613,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-8.jpg" alt="" class="card-img">
-                  <div id="photo8" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus"></div>
                   <div class="fa fa-link"></div>
               </div>
               <div class="product">
@@ -557,7 +624,7 @@
             <div class="col-sm-12 col-md-6 col-lg-4">
               <div class="photo-box mt-2">
                   <img src="Portfolios/portfolio-image-9.jpg" alt="" class="card-img">
-                  <div id="photo9" class="fa fa-search-plus"></div>
+                  <div class="fa fa-search-plus"></div>
                   <div class="fa fa-link"></div>
               </div>
               <div class="product">
@@ -598,7 +665,7 @@
 
       <!-- Blog page -->
 
-      <div id="blog-page" class="blog" style="display: none;">
+      <div id="blog-page" class="blog" >
         <div class="container title">
           <h2 class="text-white">RECENT BLOGS</h2>
           <span class="">RECENT BLOGS
@@ -681,7 +748,7 @@
 
 
       <!-- Contact page -->
-      <div id="contact-page" class="contact-page" style="display: none;">
+      <div id="contact-page" class="contact-page" >
 
         <!-- Big title -->
         <div class="container title ">
@@ -721,7 +788,7 @@
                         <button type="submit">SEND MAIL</button>
                       </form>
 
-                      <div id="invalid-model" class="invalid-model" style="display: none;">
+                      <div id="invalid-model" class="invalid-model" >
                       
                       </div>
                         
@@ -762,10 +829,13 @@
     
       </div>
 
+    </div>
+
+    
 
 
 
       <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script src="home.js"></script>
+    <script src="home1.js"></script>
   </body>
 </html>

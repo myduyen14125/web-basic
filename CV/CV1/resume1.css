@@ -3,13 +3,12 @@
     color: #a4acc4;
 }
 a{
-    text-decoration: none;
+    text-decoration: none !important;
     color: #a4acc4;
 }
 body{
     background-color: #10121b !important;
 }
-
 .hidden-bar{
     display: none;
     width: 50px;
@@ -22,6 +21,7 @@ body{
     left: 0;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 10;
     background-color: #141722;
 }
 .header-box{
@@ -81,23 +81,26 @@ body{
     height: 11%;
 }
 
-.blog{
-    width: calc(100% - 260px);
+.resume-page{
+    position: relative;
+    width: 100%;
     transition: 0.3s;
 }
-
-.blog .title{
+.resume-page .container{
+    margin-bottom: -41px;
+}
+.resume-page .title{
     padding-top: 120px !important;
     letter-spacing: 2px;
     box-sizing: border-box;
 }
-.blog .title h2{
+.resume-page .title h2{
     font-size: 2.5rem;
     font-weight: 900;
     margin-bottom: 0;
     padding-bottom: 0;
 }
-.blog .title span{
+.resume-page .title span{
     font-size: 4.5rem;
     margin-top: 0px;
     padding-top: 0px;
@@ -106,7 +109,7 @@ body{
     color: #141722;
     font-weight: 900;
 }
-.blog .progress{
+.resume-page .title .progress{
     width: 100px;
     height: 5px !important;
     background-color: #0c3360 !important;
@@ -114,60 +117,95 @@ body{
     top: 50%; left: 0;
 }
 
-.blog .card{
-    margin: auto;
-    background-color: #191d2b !important;
-    cursor: pointer;
+/* Skills level */
+.resume-page .skill{
+    margin: 25px 0;
 }
-.blog .card .img{
-    overflow: hidden;
-    transition: 0.3s;
-}
-.blog .card img{
-    transition: 0.3s;
-}
-.blog .card:hover img{
-    transform: scale(1.15);
-    object-fit: cover !important;
-    transition: 0.3s;
-}
-.blog .card .date{
-    width: 80px;
-    height: 80px;
-    position: absolute;
-    top: 35px;
-    left: 35px;
+.resume-page .skill .field{
     font-size: 1.3rem;
 }
-.blog .card .date b{
-    font-size: 2.3rem;
-    line-height: 30%;
+.resume-page .skill .content{
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
 }
 
-.blog .page-link{
-    font-size: 1.2rem;
+.resume-page .skill .progress{
+    width: 100px;
+    height: 6.5px !important;
+    border-radius: 0 !important;
+    background-color: #2e344e !important;
 }
-.blog .page-link:hover{
-    background-color: #ddd !important;
-    transition: 0.2s;
+
+/* Resume */
+.resume-page .resume-title{
+    height: 15vh;
+    display: flex;
+    margin: 20px 45px;
 }
-@media screen and (max-width: 1200px){
-    .header-box{
-        transform: translateX(-260px);
-        transition: 0.2s;
-    }
-    .blog{
-        width: 100%;
-    }
+.resume-page .resume-title .fa{
+    margin: 0 20px 0 0;
+    font-size: 1.7rem;
+    color: white;
 }
+.resume-page .resume-title h3{
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+.resume-page .timeline{
+    border-left: 3px solid #2e344e;
+    font-size: 1.14rem;
+}
+.resume-page .timeline-box{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.resume-page .timeline-box::before{
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: -24px;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: #10121b;
+    border: 3px solid #2e344e;
+}
+.resume-page .timeline-box .job-discription{
+    position: relative;
+}
+.resume-page .timeline-box .job-discription::before{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #2e344e;
+    top: 10px;
+    left: -55px;
+    border-radius: 1px;
+}
+.resume-page .timeline-box .job-discription h5{
+    font-size: 1.43rem;
+    color: #0f7bff;
+    font-weight: 600;
+}
+.resume-page .timeline-box .job-discription a{
+    color: white;
+}
+
+
 @media screen and (max-width: 992px){
-    .blog .title{
+    .resume-page .title{
         padding-top: 90px !important;
     }
-    .blog .title h2{
+    .resume-page .title h2{
         font-size: 2.3rem;
     }
-    .blog .title span{
+    .resume-page .title span{
         font-size: 4rem;
     }
 }
