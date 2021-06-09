@@ -142,7 +142,8 @@ body{
 .resume-page .resume-title{
     height: 15vh;
     display: flex;
-    margin: 20px 45px;
+    margin: 20px 0;
+    padding: 0 20px;
 }
 .resume-page .resume-title .fa{
     margin: 0 20px 0 0;

@@ -266,37 +266,38 @@ body{
 }
 @media screen and (max-width: 960px){
     .home .content h1{
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
     .home .content p{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 768px){
     .home .content h1{
-        font-size: 2.3rem;
+        font-size: 2.8rem;
     }
     .home .content p{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
+        width: 90%;
     }
     .home .content ul{
-        font-size: 1.1rem;
+        font-size: 1.2rem;
     }
 }
 @media screen and (max-width: 576px){
     .home .content h1{
-        font-size: 2.8rem;
+        font-size: 2.7rem;
     }
     .home .content h1 .blue{
         display: block;
         margin: 10px;
     }
     .home .content p{
-        font-size: 1rem;
+        font-size: 1.1rem;
         width: 90%;
     }
     .home .content ul{
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
     .home ul li{
         width: 35px;

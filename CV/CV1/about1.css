@@ -162,9 +162,7 @@ body{
 .about .modal-header{
     border: 0;
 }
-.about .modal-dialog{
-    max-width: 700px;
-}
+
 .about .modal-content{
     background-color: #343A40;
     position: relative;
@@ -281,9 +279,17 @@ body{
         padding-top: 90px !important;
     }
     .about .title h2{
-        font-size: 2.3rem;
+        font-size: 2.4rem;
     }
     .about .title span{
-        font-size: 4rem;
+        font-size: 4.2rem;
     }
+}
+@media screen and (max-width: 768px){
+    .about .content{
+        margin: 30px 0;
+    }
+}
+@media screen and (max-width: 576px){
+    
 }

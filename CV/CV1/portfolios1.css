@@ -199,9 +199,7 @@ body{
     border: 0;
     margin: 0;
 }
-.portfolio .modal-dialog{
-    max-width: 750px;
-}
+
 .portfolio .modal-content{
     background-color: #343A40;
     position: relative;
