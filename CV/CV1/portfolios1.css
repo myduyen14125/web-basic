@@ -221,3 +221,28 @@ button{
         font-size: 4rem;
     }
 }
+@media screen and (max-width: 767px){
+    
+}
+
+@media screen and (max-width: 576px){
+    .portfolio p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .portfolio .title h2{
+        font-size: 2.2rem;
+    }
+    .portfolio .title span{
+        font-size: 2.6rem;
+        top: -22px;
+    }
+    .portfolio .product .name{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+    .portfolio .product .discription{
+        font-size: 1.1rem;
+    }
+}

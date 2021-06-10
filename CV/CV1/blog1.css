@@ -163,3 +163,30 @@ body{
         font-size: 4rem;
     }
 }
+@media screen and (max-width: 767px){
+    
+}
+
+@media screen and (max-width: 576px){
+    .blog p{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .blog .title h2{
+        font-size: 2.2rem;
+    }
+    .blog .title span{
+        font-size: 2.2rem;
+        top: -20px;
+    }
+    .blog .card .date{
+        width: 60px;
+        height: 60px;
+        font-size: 0.9rem;
+    }
+    .blog .card .date b{
+        font-size: 1.3rem;
+        line-height: 10%;
+    }
+}

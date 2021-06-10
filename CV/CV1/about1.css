@@ -291,5 +291,28 @@ body{
     }
 }
 @media screen and (max-width: 576px){
-    
+    .about .content p{
+        font-size: 1.1rem;
+    }
+    .about .service-box, .review-box{
+        font-size: 1.1rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .about .title h2{
+        font-size: 2.2rem;
+    }
+    .about .title span{
+        font-size: 2.6rem;
+        top: -22px;
+    }
+    .about .content h3{
+        font-size: 1.5rem;
+    }
+    .about .content p{
+        font-size: 1.1rem;
+    }
+    .about .service-box, .review-box{
+        font-size: 1.1rem;
+    }
 }

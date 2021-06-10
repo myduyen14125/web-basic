@@ -125,7 +125,7 @@ body{
     font-size: 1.3rem;
 }
 .resume-page .skill .content{
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 1.1rem;
@@ -140,9 +140,9 @@ body{
 
 /* Resume */
 .resume-page .resume-title{
-    height: 15vh;
+    height: 10vh;
     display: flex;
-    margin: 20px 0;
+    margin: 20px auto;
     padding: 0 20px;
 }
 .resume-page .resume-title .fa{
@@ -158,6 +158,7 @@ body{
 .resume-page .timeline{
     border-left: 3px solid #2e344e;
     font-size: 1.14rem;
+    margin: 0 auto;
 }
 .resume-page .timeline-box{
     display: flex;
@@ -176,8 +177,12 @@ body{
     background-color: #10121b;
     border: 3px solid #2e344e;
 }
+.resume-page .timeline-box .time-marked{
+    width: 25%;
+}
 .resume-page .timeline-box .job-discription{
     position: relative;
+    width: 76%;
 }
 .resume-page .timeline-box .job-discription::before{
     content: '';
@@ -208,5 +213,65 @@ body{
     }
     .resume-page .title span{
         font-size: 4rem;
+    }
+}
+@media screen and (max-width: 767px){
+    .resume-page .timeline-box{
+        display: block;
+        margin: 20px auto;
+        font-size: 1.1rem;
+    }
+    .resume-page .timeline-box .job-discription::before{
+        width: 100px;
+        top: -10px;
+        left: 0;
+    }
+    .resume-page .timeline-box .job-discription{
+        width: 100%;
+    }
+    .resume-page .timeline-box .job-discription h5{
+        margin-top: 25px;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .resume-page p{
+        font-size: 1.1rem;
+    }
+    .resume-page .skill .field{
+        font-size: 1.2rem;
+    }
+    .resume-page .skill .content{
+        display: block;
+    }
+    .resume-page .skill .content .progress{
+        width: 100% !important;
+    }
+    .resume-page .timeline{
+        margin:0 20px;
+        box-sizing: border-box;
+        width: 95%;
+    }
+    .resume-page .timeline-box .time-marked{
+        width: 50%;
+    }
+}
+@media screen and (max-width: 425px){
+    .resume-page .title h2{
+        font-size: 2.2rem;
+    }
+    .resume-page .title span{
+        font-size: 2.6rem;
+        top: -22px;
+    }
+    .resume-page .resume-title h3{
+        font-size: 1.5rem;
+    }
+    .resume-page .timeline-box .job-discription h5{
+        font-size: 1.3rem;
+        width: 85%;
+    }
+    .resume-page .timeline-box .job-discription{
+        font-size: 1.1rem;
     }
 }
