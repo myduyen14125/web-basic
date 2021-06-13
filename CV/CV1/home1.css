@@ -11,7 +11,9 @@ a{
 }
 body{
     background-color: #10121b !important;
+    position: relative;
 }
+
 
 .hidden-bar{
     display: none;
@@ -51,8 +53,15 @@ body{
     border-radius: 50%;
     border: 7px solid #2e344e;
 }
-.nav{
+.navbar{
+    width: 100%;
+    padding: 0 !important;
+    margin: 0;
     height: 55%;
+}
+.nav{
+    height: 100%;
+    width: 100%;
 }
 .nav-item{
     position: relative;
@@ -63,9 +72,17 @@ body{
     cursor: pointer;
     transition: 0.2s;
 }
-.nav-link:hover{
-    color: #a4a4a4 !important;
+/* Scrollpy */
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:focus,
+.navbar-inverse .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #0f7bff;
 }
+a:hover{
+    color: white !important;
+}
+ 
 .load-menu::before{
     content: "";
     width: 0px;
@@ -92,6 +109,7 @@ body{
     width: calc(100% - 260px);
     right: 0;
     top: 0;
+    padding: 0 40px;
 }
 
 .home{

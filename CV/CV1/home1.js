@@ -34,79 +34,79 @@ hiddenBar.addEventListener("click", function(e){
 })
 
 // JS choose each page
-let homeButton = document.getElementById("home-button"); 
-let aboutButton = document.getElementById("about-button");
-let resumeButton = document.getElementById("resume-button");
-let portfolioButton = document.getElementById("portfolio-button");
-let blogButton = document.getElementById("blog-button");
-let contactButton = document.getElementById("contact-button");
+// let homeButton = document.getElementById("home-button"); 
+// let aboutButton = document.getElementById("about-button");
+// let resumeButton = document.getElementById("resume-button");
+// let portfolioButton = document.getElementById("portfolio-button");
+// let blogButton = document.getElementById("blog-button");
+// let contactButton = document.getElementById("contact-button");
 
-let homePage = document.getElementById("home-page");
-let aboutPage = document.getElementById("about-page");
-let resumePage = document.getElementById("resume-page");
-let portfolioPage = document.getElementById("portfolio-page");
-let blogPage = document.getElementById("blog-page");
-let contactPage = document.getElementById("contact-page");
+// let homePage = document.getElementById("home-page");
+// let aboutPage = document.getElementById("about-page");
+// let resumePage = document.getElementById("resume-page");
+// let portfolioPage = document.getElementById("portfolio-page");
+// let blogPage = document.getElementById("blog-page");
+// let contactPage = document.getElementById("contact-page");
 
-// Default of the screen when open CV
-homeButton.style.backgroundColor = "#0f7bff";
-homePage.style.display = "block";
+// // Default of the screen when open CV
+// homeButton.style.backgroundColor = "#0f7bff";
+// homePage.style.display = "block";
 
-homeButton.addEventListener("click", function(){
-    homeButton.style.backgroundColor = "#0f7bff";
-    aboutButton.style.backgroundColor = "#191d2b";
-    resumeButton.style.backgroundColor = "#191d2b";
-    portfolioButton.style.backgroundColor = "#191d2b";
-    blogButton.style.backgroundColor = "#191d2b";
-    contactButton.style.backgroundColor = "#191d2b";
+// homeButton.addEventListener("click", function(){
+//     homeButton.style.backgroundColor = "#0f7bff";
+//     aboutButton.style.backgroundColor = "#191d2b";
+//     resumeButton.style.backgroundColor = "#191d2b";
+//     portfolioButton.style.backgroundColor = "#191d2b";
+//     blogButton.style.backgroundColor = "#191d2b";
+//     contactButton.style.backgroundColor = "#191d2b";
 
 
-})
-aboutButton.addEventListener("click", function(){
-    homeButton.style.backgroundColor = "#191d2b";
-    aboutButton.style.backgroundColor = "#0f7bff";
-    resumeButton.style.backgroundColor = "#191d2b";
-    portfolioButton.style.backgroundColor = "#191d2b";
-    blogButton.style.backgroundColor = "#191d2b";
-    contactButton.style.backgroundColor = "#191d2b";
+// })
+// aboutButton.addEventListener("click", function(){
+//     homeButton.style.backgroundColor = "#191d2b";
+//     aboutButton.style.backgroundColor = "#0f7bff";
+//     resumeButton.style.backgroundColor = "#191d2b";
+//     portfolioButton.style.backgroundColor = "#191d2b";
+//     blogButton.style.backgroundColor = "#191d2b";
+//     contactButton.style.backgroundColor = "#191d2b";
 
-})
-resumeButton.addEventListener("click", function(){
-    homeButton.style.backgroundColor = "#191d2b";
-    aboutButton.style.backgroundColor = "#191d2b";
-    resumeButton.style.backgroundColor = "#0f7bff";
-    portfolioButton.style.backgroundColor = "#191d2b";
-    blogButton.style.backgroundColor = "#191d2b";
-    contactButton.style.backgroundColor = "#191d2b";
+// })
+// resumeButton.addEventListener("click", function(){
+//     homeButton.style.backgroundColor = "#191d2b";
+//     aboutButton.style.backgroundColor = "#191d2b";
+//     resumeButton.style.backgroundColor = "#0f7bff";
+//     portfolioButton.style.backgroundColor = "#191d2b";
+//     blogButton.style.backgroundColor = "#191d2b";
+//     contactButton.style.backgroundColor = "#191d2b";
 
-})
-portfolioButton.addEventListener("click", function(){
-    homeButton.style.backgroundColor = "#191d2b";
-    aboutButton.style.backgroundColor = "#191d2b";
-    resumeButton.style.backgroundColor = "#191d2b";
-    portfolioButton.style.backgroundColor = "#0f7bff";
-    blogButton.style.backgroundColor = "#191d2b";
-    contactButton.style.backgroundColor = "#191d2b";
+// })
+// portfolioButton.addEventListener("click", function(){
+//     homeButton.style.backgroundColor = "#191d2b";
+//     aboutButton.style.backgroundColor = "#191d2b";
+//     resumeButton.style.backgroundColor = "#191d2b";
+//     portfolioButton.style.backgroundColor = "#0f7bff";
+//     blogButton.style.backgroundColor = "#191d2b";
+//     contactButton.style.backgroundColor = "#191d2b";
 
-})
-blogButton.addEventListener("click", function(){
-    homeButton.style.backgroundColor = "#191d2b";
-    aboutButton.style.backgroundColor = "#191d2b";
-    resumeButton.style.backgroundColor = "#191d2b";
-    portfolioButton.style.backgroundColor = "#191d2b";
-    blogButton.style.backgroundColor = "#0f7bff";
-    contactButton.style.backgroundColor = "#191d2b";
+// })
+// blogButton.addEventListener("click", function(){
+//     homeButton.style.backgroundColor = "#191d2b";
+//     aboutButton.style.backgroundColor = "#191d2b";
+//     resumeButton.style.backgroundColor = "#191d2b";
+//     portfolioButton.style.backgroundColor = "#191d2b";
+//     blogButton.style.backgroundColor = "#0f7bff";
+//     contactButton.style.backgroundColor = "#191d2b";
 
-})
-contactButton.addEventListener("click", function(){
-    homeButton.style.backgroundColor = "#191d2b";
-    aboutButton.style.backgroundColor = "#191d2b";
-    resumeButton.style.backgroundColor = "#191d2b";
-    portfolioButton.style.backgroundColor = "#191d2b";
-    blogButton.style.backgroundColor = "#191d2b";
-    contactButton.style.backgroundColor = "#0f7bff";
+// })
+// contactButton.addEventListener("click", function(){
+//     homeButton.style.backgroundColor = "#191d2b";
+//     aboutButton.style.backgroundColor = "#191d2b";
+//     resumeButton.style.backgroundColor = "#191d2b";
+//     portfolioButton.style.backgroundColor = "#191d2b";
+//     blogButton.style.backgroundColor = "#191d2b";
+//     contactButton.style.backgroundColor = "#0f7bff";
 
-})
+// })
 
 // Invalid input contact
 let nameInput = document.getElementById("nameInput");

@@ -31,37 +31,43 @@
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Version bootstrap to have scrollpy -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+
+
   </head>
-  <body class="d-flex justify-content-end">
+  <body class="d-flex justify-content-end" data-spy="scroll" data-target=".navbar" data-offset="200">
 
     <!-- Header box -->
     <div id="header-box" class="header-box border-right border-2 border-dark p-0">
       <div class="header-image m-0 p-0">
         <img src="avt.jpg" alt="" />
       </div>
-
-      <ul class=" nav flex-column justify-content-center text-center text-uppercase">
-        <li class="nav-item">
-          <a id="home-button" class="nav-link load-menu" aria-current="page" href="#home-page">home</a>
-        </li>
-        <li class="nav-item">
-          <a id="about-button" class="nav-link load-menu" href="#about-page">about</a>
-        </li>
-        <li class="nav-item">
-          <a id="resume-button" class="nav-link load-menu" href="#resume-page">resume</a>
-        </li>
-        <li class="nav-item">
-          <a id="portfolio-button" class="nav-link load-menu" href="#portfolio-page">portfolios</a>
-        </li>
-        <li class="nav-item">
-          <a id="blog-button" class="nav-link load-menu" href="#blog-page">blogs</a>
-        </li>
-        <li class="nav-item">
-          <a id="contact-button" class="nav-link load-menu" href="#contact-page">contact</a>
-        </li>
-      </ul>
+      
+      <nav class="navbar navbar-inverse navbar-fixed-top flex-column justify-content-center">
+        <ul class="nav navbar-nav flex-column justify-content-center text-center text-uppercase">
+          <li class="nav-item">
+            <a id="home-button" class="nav-link load-menu" href="#home-page">home</a>
+          </li>
+          <li class="nav-item">
+            <a id="about-button" class="nav-link load-menu" href="#about-page">about</a>
+          </li>
+          <li class="nav-item">
+            <a id="resume-button" class="nav-link load-menu" href="#resume-page">resume</a>
+          </li>
+          <li class="nav-item">
+            <a id="portfolio-button" class="nav-link load-menu" href="#portfolio-page">portfolios</a>
+          </li>
+          <li class="nav-item">
+            <a id="blog-button" class="nav-link load-menu" href="#blog-page">blogs</a>
+          </li>
+          <li class="nav-item">
+            <a id="contact-button" class="nav-link load-menu" href="#contact-page">contact</a>
+          </li>
+        </ul>
+      </nav>
+      
       <div class=" footer d-flex justify-content-center align-items-center border-top border-2 border-dark">
         @2021 NuclearThemes
       </div>
@@ -126,8 +132,8 @@
     <div id="about-page" class="about " >
       <!-- About title -->
       <div class="container title">
-        <h2 class="text-white wow fadeInLeft">ABOUT ME</h2>
-        <span class="wow fadeInLeft"
+        <h2 class="text-white wow fadeInDown">ABOUT ME</h2>
+        <span class="wow fadeInDown"
           >ABOUT ME
           <div class="progress">
             <div class="progress-bar" style="width: 20%"></div>
@@ -138,7 +144,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12 col-lg-6 p-3">
-            <div class="img wow fadeInLeft">
+            <div class="img wow fadeInUp">
               <img src="about-image.jpg" class="card-img rounded-0" alt="About me image"/>
               <div class="fa fa-search-plus" data-toggle="modal" data-target="#photoModal"></div>
               <!-- Modal photo -->
@@ -188,7 +194,7 @@
 
       <!-- Service -->
       <div class="container title">
-        <h2 class="text-white wow fadeInLeft">SERVICES</h2>
+        <h2 class="text-white wow fadeInDown">SERVICES</h2>
         <span class=""
           >SERVICES
           <div class="progress">
@@ -240,7 +246,7 @@
 
       <!-- Reviews -->
       <div class="container title">
-        <h2 class="text-white wow fadeInLeft">REVIEWS</h2>
+        <h2 class="text-white wow fadeInDown">REVIEWS</h2>
         <span class=""
           >REVIEWS
           <div class="progress">
@@ -289,7 +295,7 @@
 
       <!-- Big title -->
       <div class="container title ">
-        <h2 class="text-white wow fadeInLeft">MY SKILLS</h2>
+        <h2 class="text-white wow fadeInDown">MY SKILLS</h2>
         <span class="">MY SKILLS
           <div class="progress">
             <div class="progress-bar " style="width:50%"></div>
@@ -306,7 +312,7 @@
                       <div class="content">
                           <span class="level" style="width: 10%">95%</span>
                           <div class="progress" style="width: 90%;">
-                              <div class="progress-bar wow fadeInLeft" style="width:95%"></div>
+                              <div class="progress-bar wow slideInLeft" style="width:95%"></div>
                           </div>
                       </div>
                   </div>
@@ -315,7 +321,7 @@
                       <div class="content">
                           <span class="level" style="width: 10%">90%</span>
                           <div class="progress" style="width: 90%;">
-                              <div class="progress-bar wow fadeInLeft" style="width:90%"></div>
+                              <div class="progress-bar wow slideInLeft" style="width:90%"></div>
                           </div>
                       </div>
                   </div>
@@ -324,7 +330,7 @@
                       <div class="content">
                           <span class="level" style="width: 10%">60%</span>
                           <div class="progress" style="width: 90%;">
-                              <div class="progress-bar wow fadeInLeft" style="width:60%"></div>
+                              <div class="progress-bar wow slideInLeft" style="width:60%"></div>
                           </div>
                       </div>
                   </div>
@@ -337,7 +343,7 @@
                       <div class="content">
                           <span class="level" style="width: 10%">80%</span>
                           <div class="progress" style="width: 90%;">
-                              <div class="progress-bar wow fadeInLeft" style="width:80%"></div>
+                              <div class="progress-bar wow slideInLeft" style="width:80%"></div>
                           </div>
                       </div>
                   </div>
@@ -346,7 +352,7 @@
                       <div class="content">
                           <span class="level" style="width: 10%">65%</span>
                           <div class="progress" style="width: 90%;">
-                              <div class="progress-bar wow fadeInLeft" style="width:65%"></div>
+                              <div class="progress-bar wow slideInLeft" style="width:65%"></div>
                           </div>
                       </div>
                   </div>
@@ -355,7 +361,7 @@
                       <div class="content">
                           <span class="level" style="width: 10%">20%</span>
                           <div class="progress" style="width: 90%;">
-                              <div class="progress-bar wow fadeInLeft" style="width:20%"></div>
+                              <div class="progress-bar wow slideInLeft" style="width:20%"></div>
                           </div>
                       </div>
                   </div>             
@@ -366,7 +372,7 @@
   
       <!-- Big title -->
       <div class="container title ">
-          <h2 class="text-white wow fadeInLeft">RESUME</h2>
+          <h2 class="text-white wow fadeInDown">RESUME</h2>
           <span class="">RESUME
             <div class="progress">
               <div class="progress-bar" style="width:50%"></div>
@@ -474,7 +480,7 @@
      
         <!-- Big title -->
         <div class="container title">
-          <h2 class="text-white wow fadeInLeft">PORTFOLIOS</h2>
+          <h2 class="text-white wow fadeInDown">PORTFOLIOS</h2>
           <span class="">PORTFOLIOS
             <div class="progress">
               <div class="progress-bar" style="width:60%"></div>
@@ -669,7 +675,7 @@
 
       <div id="blog-page" class="blog" >
         <div class="container title">
-          <h2 class="text-white wow fadeInLeft">RECENT BLOGS</h2>
+          <h2 class="text-white wow fadeInDown">RECENT BLOGS</h2>
           <span class="">RECENT BLOGS
             <div class="progress">
               <div class="progress-bar" style="width:70%"></div>
@@ -754,7 +760,7 @@
 
         <!-- Big title -->
         <div class="container title ">
-          <h2 class="text-white wow fadeInLeft">CONTACT ME</h2>
+          <h2 class="text-white wow fadeInDown">CONTACT ME</h2>
           <span class="">CONTACT ME
             <div class="progress">
               <div class="progress-bar" style="width:90%"></div>
