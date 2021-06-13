@@ -216,6 +216,11 @@
     .about .service-box, .review-box{
         font-size: 1.1rem;
     }
+    .about .container .row .img:hover .fa{
+        top: 40%;
+        left: 42%;
+        font-size: 5rem;
+    }
 }
 @media screen and (max-width: 425px){
     .about .title h2{
@@ -233,5 +238,10 @@
     }
     .about .service-box, .review-box{
         font-size: 1.1rem;
+    }
+    .about .container .row .img:hover .fa{
+        top: 37%;
+        left: 40%;
+        font-size: 4rem;
     }
 }
