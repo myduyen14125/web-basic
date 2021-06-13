@@ -3,6 +3,12 @@ let headerBox = document.getElementById("header-box");
 let count = 0;
 let x = window.matchMedia("(max-width: 1200px)");
 
+// Scrollpy
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#navbar'
+  })
+  
+
 // Resize screen 
 function reszieScreen(x){
     if(x.matches){
@@ -52,61 +58,7 @@ hiddenBar.addEventListener("click", function(e){
 // homeButton.style.backgroundColor = "#0f7bff";
 // homePage.style.display = "block";
 
-// homeButton.addEventListener("click", function(){
-//     homeButton.style.backgroundColor = "#0f7bff";
-//     aboutButton.style.backgroundColor = "#191d2b";
-//     resumeButton.style.backgroundColor = "#191d2b";
-//     portfolioButton.style.backgroundColor = "#191d2b";
-//     blogButton.style.backgroundColor = "#191d2b";
-//     contactButton.style.backgroundColor = "#191d2b";
 
-
-// })
-// aboutButton.addEventListener("click", function(){
-//     homeButton.style.backgroundColor = "#191d2b";
-//     aboutButton.style.backgroundColor = "#0f7bff";
-//     resumeButton.style.backgroundColor = "#191d2b";
-//     portfolioButton.style.backgroundColor = "#191d2b";
-//     blogButton.style.backgroundColor = "#191d2b";
-//     contactButton.style.backgroundColor = "#191d2b";
-
-// })
-// resumeButton.addEventListener("click", function(){
-//     homeButton.style.backgroundColor = "#191d2b";
-//     aboutButton.style.backgroundColor = "#191d2b";
-//     resumeButton.style.backgroundColor = "#0f7bff";
-//     portfolioButton.style.backgroundColor = "#191d2b";
-//     blogButton.style.backgroundColor = "#191d2b";
-//     contactButton.style.backgroundColor = "#191d2b";
-
-// })
-// portfolioButton.addEventListener("click", function(){
-//     homeButton.style.backgroundColor = "#191d2b";
-//     aboutButton.style.backgroundColor = "#191d2b";
-//     resumeButton.style.backgroundColor = "#191d2b";
-//     portfolioButton.style.backgroundColor = "#0f7bff";
-//     blogButton.style.backgroundColor = "#191d2b";
-//     contactButton.style.backgroundColor = "#191d2b";
-
-// })
-// blogButton.addEventListener("click", function(){
-//     homeButton.style.backgroundColor = "#191d2b";
-//     aboutButton.style.backgroundColor = "#191d2b";
-//     resumeButton.style.backgroundColor = "#191d2b";
-//     portfolioButton.style.backgroundColor = "#191d2b";
-//     blogButton.style.backgroundColor = "#0f7bff";
-//     contactButton.style.backgroundColor = "#191d2b";
-
-// })
-// contactButton.addEventListener("click", function(){
-//     homeButton.style.backgroundColor = "#191d2b";
-//     aboutButton.style.backgroundColor = "#191d2b";
-//     resumeButton.style.backgroundColor = "#191d2b";
-//     portfolioButton.style.backgroundColor = "#191d2b";
-//     blogButton.style.backgroundColor = "#191d2b";
-//     contactButton.style.backgroundColor = "#0f7bff";
-
-// })
 
 // Invalid input contact
 let nameInput = document.getElementById("nameInput");
