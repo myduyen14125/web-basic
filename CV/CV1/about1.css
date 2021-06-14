@@ -236,6 +236,13 @@
     .about .content p{
         font-size: 1.1rem;
     }
+    .about .content ul li{
+        display: block;
+    }
+    .about .content ul li b{
+        width: auto;
+        display: inline-block;
+    }
     .about .service-box, .review-box{
         font-size: 1.1rem;
     }
@@ -244,4 +251,5 @@
         left: 40%;
         font-size: 4rem;
     }
+
 }

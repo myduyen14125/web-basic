@@ -330,3 +330,8 @@ a:hover {
     height: 35px;
   }
 }
+@media screen and (max-width: 576px){
+  .home .container {
+    max-height: 75vh;
+  }
+}
