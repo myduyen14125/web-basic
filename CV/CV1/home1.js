@@ -3,11 +3,7 @@ let headerBox = document.getElementById("header-box");
 let count = 0;
 let x = window.matchMedia("(max-width: 1200px)");
 
-// Scrollpy
-var scrollSpy = new bootstrap.ScrollSpy(document.body, {
-    target: '#navbar'
-  })
-  
+
 
 // Resize screen 
 function reszieScreen(x){
@@ -38,6 +34,12 @@ hiddenBar.addEventListener("click", function(e){
     }
 
 })
+
+// Scrollpy
+var scrollSpy = new bootstrap.ScrollSpy(document.body, {
+    target: '#navbar'
+  })
+  
 
 // JS choose each page
 // let homeButton = document.getElementById("home-button"); 
@@ -105,13 +107,3 @@ function invalidInput(){
     }
 }
 
-//Zoom photo -> change: zoom photo just be a model 
-// let zoomPhoto = document.getElementsByClassName("fa-search-plus");
-
-// for(let i = 0; i < zoomPhoto.length; i++){
-//     // let id = Number(zoomPhoto[i].getAttribute("id"));
-//     // let img = document.getElementById("photo" + id);
-//     zoomPhoto[i].addEventListener("click", function(){
-//         alert("heheh helo");
-//     })
-// }
