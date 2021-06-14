@@ -197,3 +197,19 @@
         font-size: 1.1rem;
     }
 }
+@media screen and (max-width: 300px){
+    .resume-page .content p{
+        margin: 15px 0;
+    } 
+    .resume-page .title{
+        padding-top: 70px !important;
+        padding-bottom: 20px;
+    }
+    .resume-page .title h2{
+        font-size: 1.8rem;
+    }
+    .resume-page .title span{
+        font-size: 2rem;
+        top: -15px;
+    }
+}

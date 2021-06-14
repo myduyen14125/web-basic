@@ -100,12 +100,29 @@
         top: -20px;
     }
     .blog .card .date{
-        width: 60px;
-        height: 60px;
-        font-size: 0.9rem;
+        width: 50px;
+        height: 50px;
+        font-size: 0.5rem;
     }
     .blog .card .date b{
-        font-size: 1.3rem;
+        font-size: 0.9rem;
         line-height: 10%;
     }
+}
+@media screen and (max-width: 300px){
+    .blog .content p{
+        margin: 15px 0;
+    } 
+    .blog .title{
+        padding-top: 70px !important;
+        padding-bottom: 20px;
+    }
+    .blog .title h2{
+        font-size: 1.8rem;
+    }
+    .blog .title span{
+        font-size: 2rem;
+        top: -15px;
+    }
+    
 }

@@ -166,3 +166,19 @@ button{
         font-size: 1.1rem;
     }
 }
+@media screen and (max-width: 300px){
+    .portfolio .content p{
+        margin: 15px 0;
+    } 
+    .portfolio .title{
+        padding-top: 70px !important;
+        padding-bottom: 20px;
+    }
+    .portfolio .title h2{
+        font-size: 1.8rem;
+    }
+    .portfolio .title span{
+        font-size: 2rem;
+        top: -15px;
+    }
+}

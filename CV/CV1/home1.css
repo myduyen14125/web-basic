@@ -335,3 +335,22 @@ a:hover {
     max-height: 75vh;
   }
 }
+@media screen and (max-width: 425px){
+  .home .container {
+    max-height: 55vh;
+  }
+  .home .content h1 {
+    font-size: 2rem;
+  }
+  .home .content h1 .blue {
+    display: block; 
+  }
+  .home p{
+    font-size: 1rem;
+  }
+  .home ul li{
+    width: 27px;
+    height: 27px;
+  }
+}
+
