@@ -20,6 +20,18 @@ reszieScreen(x);
 x.addEventListener("change", reszieScreen);
 
 hiddenBar.addEventListener("click", function(e){
+    //Hide header box when click each nav item
+    let navItem = document.getElementsByClassName("nav-item")
+    Array.prototype.forEach.call(navItem, function(item) {
+        console.log(item)
+        item.addEventListener("click", function(){
+            headerBox.style.transform = "translateX(-260px)";
+            hiddenBar.style.transform = "translateX(0px)";
+            hiddenBar.innerHTML = '<div class="fa fa-bars">' + '</div>'; 
+        })
+    })
+
+
     count ++;
     if(count % 2 != 0){
         headerBox.style.transform = "translateX(0)";
@@ -39,7 +51,8 @@ hiddenBar.addEventListener("click", function(e){
 var scrollSpy = new bootstrap.ScrollSpy(document.body, {
     target: '#navbar'
   })
-  
+
+
 
 // JS choose each page
 // let homeButton = document.getElementById("home-button"); 

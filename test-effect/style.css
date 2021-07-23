@@ -1,0 +1,40 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.timeline{
+    display: flex;
+    justify-content: space-between;
+    max-width: 90%;
+    margin: 50px auto;
+}
+.time-marked{
+    width: calc(100% / 4);
+    position: relative;
+    text-align: right;
+}
+.time-marked::before{
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    right: 0;
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border: 2px solid aqua;
+    border-radius: 100%;
+    transition: 0.4s;
+}
+.time-marked span{
+    display: block;
+    height: 5px;
+    background-color: aqua;
+    width: 90%;
+    transition: 0.4s;
+}
+.time-marked:hover span{
+    width: 100%;
+}
+.time-marked:hover::before{
+    background-color: aqua;
+}
